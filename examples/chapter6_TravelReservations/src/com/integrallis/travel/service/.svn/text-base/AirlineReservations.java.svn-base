@@ -1,0 +1,17 @@
+package com.integrallis.travel.service;
+
+import com.integrallis.travel.domain.Flight;
+
+/**
+ * This will list out and find all the airline reservations.
+ * 
+ * @author online
+ *
+ */
+public interface AirlineReservations {
+
+    void lookupFlights();
+    Flight getSelectedFlight();
+    
+    void destroy();
+}

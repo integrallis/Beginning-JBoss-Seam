@@ -1,0 +1,5 @@
+<jboss-app>
+      <loader-repository> 
+      seam.jboss.org:loader=chapter8
+      </loader-repository> 
+</jboss-app> 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="0"
+   repos="http://petradesigns.com/repository"
+   schedule="add"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter9_ec/dd/web"
+   kind="dir"
+   name=""/>
+<entry
+   schedule="add"
+   kind="file"
+   name="components.xml"/>
+<entry
+   schedule="add"
+   name="faces-config.xml"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="web.xml"/>
+</wc-entries>

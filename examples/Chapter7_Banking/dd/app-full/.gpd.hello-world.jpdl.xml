@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-diagram name="helloWorld" width="561" height="430">
+  <node name="start" x="110" y="60" width="-1" height="-1">
+    <transition>
+      <label x="5" y="-10"/>
+    </transition>
+  </node>
+  <node name="helloWorld" x="108" y="146" width="140" height="40">
+    <transition>
+      <label x="5" y="-10"/>
+    </transition>
+  </node>
+  <node name="done" x="0" y="0" width="140" height="40"/>
+</process-diagram>

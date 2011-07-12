@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/view/img"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="b92f68c2511277a5f4802063d4a22aab"
+   prop-time="2006-11-02T05:01:46.000000Z"
+   text-time="2006-06-18T16:20:31.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="bg.gif"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="11187ebf124a962cc84e51559afc9762"
+   prop-time="2006-11-02T05:01:57.000000Z"
+   text-time="2006-06-18T16:20:29.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="btn.bg.gif"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="a20d57370df54c00fd6874e3defe5f5c"
+   prop-time="2006-11-02T05:01:50.000000Z"
+   text-time="2006-06-18T16:20:27.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="cnt.bg.gif"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="8122b0aee4cefc0211fd0359ce7c2733"
+   prop-time="2006-11-02T05:01:49.000000Z"
+   text-time="2006-06-18T16:20:31.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="hdr.ad.jpg"
+   committed-rev="2"/>
+<entry
+   checksum="84f5611e9f77f69de93583ef1e9072c2"
+   prop-time="2006-11-02T05:01:57.000000Z"
+   text-time="2006-06-18T16:20:22.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="hdr.bar.jpg"
+   committed-rev="2"/>
+<entry
+   checksum="628029a7cf333c73cb14483b3938e6ef"
+   prop-time="2006-11-02T05:01:41.000000Z"
+   text-time="2006-06-18T16:20:28.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="hdr.bg.gif"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="410d0a77f5033b2a76bdc5736205f24f"
+   prop-time="2006-11-02T05:01:44.000000Z"
+   text-time="2006-06-18T16:20:32.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="hdr.title.gif"
+   committed-rev="2"/>
+<entry
+   checksum="e5c451948aafbfd212fb8105bb964237"
+   prop-time="2006-11-02T05:02:01.000000Z"
+   text-time="2006-06-18T16:20:28.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="header_line.gif"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="b273774328c17d9014397320396ad8fd"
+   prop-time="2006-11-02T05:01:53.000000Z"
+   text-time="2006-06-18T16:20:30.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="input.bg.gif"
+   committed-rev="2"/>
+<entry
+   checksum="12ff9a1c0e751d19c58fccef6b00b509"
+   prop-time="2006-11-02T05:02:00.000000Z"
+   text-time="2006-06-18T16:20:28.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="sdb.bg.gif"
+   committed-rev="2"/>
+<entry
+   checksum="00b7601f9c58a9ea2bc8621fc715dc80"
+   prop-time="2006-11-02T05:01:54.000000Z"
+   text-time="2006-06-18T16:20:28.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="th.bg.gif"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

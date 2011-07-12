@@ -1,0 +1,19 @@
+
+The code here is the code for the book Beginning JBoss Seam.
+
+In it there are 2 basic types of code. One are items I did in the book as snippets
+the other is the Garage Sale, Ticketing System, and Travel Reservations application.
+
+My hope is you can use this code as a way to guide you for basic development of your
+JBoss Seam skills.
+
+If you have any questions or find any problems feel free to email me at jnusairat@integrallis.com
+
+Notes --
+
+Each example has a build file with a build.properties.
+You will have to change each one's location for deployment.
+
+IF you do not, it is not too big of a deal it will just not auto copy to your deploy directory.
+
+-joseph-

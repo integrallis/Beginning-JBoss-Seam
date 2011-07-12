@@ -1,0 +1,16 @@
+package com.petradesigns.garageSale.service;
+
+import java.util.List;
+
+import javax.ejb.Local;
+
+import com.petradesigns.garageSale.domain.House;
+
+//@Remote
+//@Local
+public interface GarageSale {
+    void addHouse(House h);
+    void deleteHouse(long h);
+    void updateHouse(House h);
+    List<House> findAll();
+}

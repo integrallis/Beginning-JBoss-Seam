@@ -1,0 +1,16 @@
+<application>
+	<display-name>Seam Registration</display-name>
+
+	<module>
+		<web>
+			<web-uri>chapter10.war</web-uri>
+			<context-root>/chapter10</context-root>
+		</web>
+	</module>
+	<module>
+		<ejb>chapter10-business.ejb3</ejb>
+	</module>
+	<module>
+	    <java>jboss-seam.jar</java>
+	</module>
+</application>

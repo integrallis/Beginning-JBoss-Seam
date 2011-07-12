@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xml:lang="en"  
+      lang="en">
+	  
+<f:view>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Ticketing System</title>
+	</head>
+	<body>
+		
+		<!-- used tables for simplicity. in real life css would be what you'd want to use -->
+		<div id="document">
+		<table border="0">
+			<!-- Title -->
+			<tr>
+				<td>
+					<div id="header">
+				    	<h1>Ticket System</h1><br/>
+				    	<hr/>
+					</div>
+				</td>
+			</tr>
+			<!-- Menu Bar -->
+			<tr>
+				<td>
+					<div id="menubar">
+						<ui:include src="menubar.xhtml"/>
+					</div>
+				</td>
+			</tr>
+			<!-- Messages -->
+			<tr>
+				<td>
+					<div id="messages">
+						<font color="red">
+							<h:messages/> 
+						</font>
+					</div>
+				</td>
+			</tr>
+			
+			<!-- Navigation Page -->
+			<tr>
+				<td>
+					<div id="content">
+						<ui:insert name="content"/>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</f:view>
+</html>

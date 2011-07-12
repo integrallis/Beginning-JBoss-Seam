@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="2"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/web/garageSale"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="dir"
+   name=""
+   committed-rev="2"/>
+<entry
+   checksum="cfb4b28e1b5686e3e85225c428879120"
+   text-time="2006-09-28T01:44:20.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="homeSuccess.jsp"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="63a839d081d6b208ee2506a646b4c990"
+   text-time="2006-09-28T04:01:33.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="houseAdd.jsp"
+   committed-rev="2"/>
+<entry
+   checksum="1ecd115b99420baf72c20d65ff968ddc"
+   text-time="2006-09-28T04:01:33.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="houseEdit.jsp"
+   committed-rev="2"/>
+<entry
+   checksum="e5030aa3c696a602ccd3275ddc5842e8"
+   text-time="2006-09-28T04:01:33.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="houseList.jsp"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

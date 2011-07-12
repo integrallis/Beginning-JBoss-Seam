@@ -1,0 +1,14 @@
+
+
+This will add the JSF we did before and add to it an EJB layer.
+
+You will notice I am doing an InitalContext lookup as well.
+This is in general not a best practice. It was done more to show options than anything else.
+
+Also you will notice there is no validaiton.
+So that if you go above two for a state, it will throw an error back.
+
+We will handle real errors in Chapter 5.
+
+Please also remember Chapter 3 and are only very basic examples to prepare us to do 
+some real Seam coding starting in chapter 5.

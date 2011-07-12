@@ -1,0 +1,35 @@
+
+<pages> 
+
+    <page view-id="/ticket_work.xhtml"
+            no-conversation-view-id="/ticket_list.xhtml"/>
+            
+	<!-- Navigation from the login page -->
+    <page view-id="/login.xhtml">
+        <navigation from-action="#{identity.login}">
+            <rule if-outcome="success">
+                <redirect view-id="/ticket_list.xhtml"/>
+            </rule>
+        </navigation>
+    </page>
+    <!-- 
+    <page view-id="/ticket_list.xhtml"> 
+		<restrict/> 
+	</page> 
+	     -->
+    
+    <!-- exception navigation -->
+	<exception class="org.jboss.seam.security.NotLoggedInException"> 
+		<end-conversation/> 
+		<redirect view-id="/login.xhtml"> 
+			<message>You must be logged in to perform this action</message> 
+		</redirect> 
+	</exception> 
+	
+	<exception class="org.jboss.seam.security.AuthorizationException"> 
+		<end-conversation/> 
+		<redirect view-id="/security_error.xhtml"> 
+			<message>You do not have the necessary security privileges to perform this action.</message> 
+		</redirect> 
+	</exception> 
+</pages> 

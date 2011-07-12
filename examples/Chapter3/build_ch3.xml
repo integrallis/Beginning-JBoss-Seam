@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<project name="GarageSale" default="all" basedir=".">
+
+    <description>
+    ============================================================================        
+    Beginning Seam - By Joseph Faisal Nusairat
+    Chapter 4
+    ============================================================================    
+    </description>
+    
+
+    <!-- =================================================================== -->
+    <!-- Initialization                                                      -->
+    <!-- =================================================================== -->
+
+    <property file="build.properties"/>  
+    
+    <!-- =========== -->
+    <!-- Directories -->
+    <!-- =========== -->
+    <property name="build" location="build" />
+    <property name="lib" location="../../lib" />   
+    
+    <!-- Source -->
+    <property name="src" location="src" />         
+    <property name="src-java" location="${src}/java" />
+    
+    <!-- Source Web Folders -->
+    <property name="web" location="web" />
+    
+    <!-- Build Artifact Destinations -->
+    <property name="classes" location="bin" />    
+    <property name="dist" location="dist" />    
+    
+    <!-- Deployment Descriptors -->
+    <property name="dd" location="dd" />         
+    <property name="dd-ejb" location="${dd}/ejb" />
+	<property name="dd-web" location="${dd}/web" />
+	<property name="dd-app-normal" location="${dd}/app-full" />
+	
+    <!-- Libraries -->
+    <property name="faces-lib" location="${lib}/faces" />    
+	
+    <!-- ===== -->
+    <!-- Files -->
+    <!-- ===== -->
+    <property name="war-filename" value="${app.name}.war" />
+    <property name="war-file" value="${dist}/${war-filename}" /> 
+
+    <!-- ===== -->
+    <!-- Paths -->
+    <!-- ===== -->
+    <path id="all.source.path">
+        <pathelement path="${src-java}"/>
+    </path>    
+    
+    <!-- =========== -->
+    <!-- Class Paths -->
+    <!-- =========== -->   
+    <path id="class.path">
+        <fileset dir="${faces-lib}">
+            <include name="*.jar"/> 
+        </fileset>
+    	<fileset dir="${lib}">
+			<include name="myfaces-impl-1.1.4.jar"/> 
+			<include name="myfaces-api-1.1.4.jar"/> 
+			<include name="javax.servlet.jsp.jar"/> 
+		</fileset>
+    </path> 
+    
+    <path id="app.class.path">
+        <pathelement location="${classes}" />
+        <path refid="class.path"/> 
+    </path>
+    
+    <!-- ======== -->
+    <!-- TaskDefs -->
+    <!-- ======== -->   
+    
+    <!-- =================================================================== -->
+    <!-- Target: compile                                                     -->
+    <!-- Compiles all classes                                                -->
+    <!-- MUST use JDK 1.5 compiler                                           -->    
+    <!-- =================================================================== -->
+    <target name="compile" description="Compiles all classes (JDK1.5)">     
+    	<mkdir dir="${classes}"/>
+        <javac
+            destdir="${classes}"
+            classpathref="class.path"
+            debug="on"
+            deprecation="on"
+            optimize="off">
+            <src>
+                <path refid="all.source.path" />
+            </src>
+        </javac>
+    </target>    
+    
+    <target name="compile-clean">
+        <delete includeemptydirs="true">
+            <fileset dir="${classes}" includes="**/*"/>
+        </delete>        
+    </target>    
+    
+    <!-- =================================================================== -->
+    <!-- Target: package-web                                                 -->
+    <!-- Package the web module                                              -->
+    <!-- =================================================================== -->    
+    <target name="package-web" depends="compile" 
+        description="Package the web module" >
+    	<mkdir dir="${dist}"/>    	
+        <war warfile="${war-file}" webxml="${dd-web}/web.xml">
+        	<!-- include the other xml configurations -->
+        	<webinf dir="${dd-web}">
+        		<exclude name="web.xml"/>
+            </webinf>
+        	<!-- include our jsp's and html files -->
+        	<fileset dir="${web}">
+                <include name="**/*.jsp"/>
+                <include name="**/*.html"/>
+            </fileset>
+        	<!-- the classes, only include our web based classes -->
+            <classes dir="${classes}">
+                <include name="**"/>
+            </classes>      
+        	<!-- include the seam-ui component -->
+        	<lib dir="${lib}/tomahawk" includes="*.jar"/>
+        	<!--
+            <lib dir="${lib}/seam" includes="jboss-seam-ui.jar"/>    
+        	<lib dir="${lib}/seam" includes="jboss-seam-debug.jar"/>
+        	<lib dir="${lib}/facelets" includes="*.jar"/> 
+        	-->
+        </war>
+    </target>
+    
+    <target name="package-web-clean">
+        <delete file="${war-filename}"/>
+    </target>    
+
+    <!-- =================================================================== -->
+    <!-- Target: clean-all                                                   -->
+    <!-- Removes all build artifacts                                         -->
+    <!-- =================================================================== --> 
+    <target name="clean-all" description="Removes all build artifacts">
+	<!--
+        <antcall target="compile-clean" />
+        <antcall target="generate-docs-clean" />        
+        <antcall target="test-clean" />
+        <antcall target="package-ejb-clean" />
+        <antcall target="package-web-clean" />        
+        <antcall target="package-har-clean" />        
+        <antcall target="package-ddto-clean" />        
+        <antcall target="package-ear-clean" />     
+        <antcall target="package-spring-web-clean" />
+    -->
+    </target>
+    
+    <!-- =================================================================== -->
+    <!-- Target: package-deploy                                              -->
+    <!-- Packages the ear and copies it to the (hot)deployment directory.    -->
+    <!-- =================================================================== -->
+    <target name="package-deploy" depends="package-web"
+            description="Copies the ear to the deployment directory">
+        <copy todir="${ear.deployment}">
+            <fileset dir="${dist}">
+                <include name="${war-filename}"/>        
+            </fileset>
+        </copy>    
+    </target>
+    
+    <!-- =================================================================== -->
+    <!-- Target: all                                                         -->
+    <!-- Tests and Packages the J2EE Application                             -->
+    <!-- =================================================================== -->
+    
+    <target name="all" depends="package-deploy" 
+            description="Tests and Packages the JBoss J2EE &amp; Spring Applications" />
+
+    <!-- =================================================================== -->
+    <!-- Target: all-clean-first                                             -->
+    <!-- Tests and Packages the J2EE Application (Cleans First)              -->     
+    <!-- =================================================================== -->
+    
+    <target name="all-clean-first" depends="clean-all,all" 
+            description="Tests and Packages the JBoss J2EE &amp; Spring Applications (Cleans First)" /> 
+
+</project>

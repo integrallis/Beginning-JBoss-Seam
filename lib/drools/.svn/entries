@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="2"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/lib/drools"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="dir"
+   name=""
+   committed-rev="2"/>
+<entry
+   checksum="97c6bb68108a3d68094eab0f67157962"
+   prop-time="2006-11-02T05:01:58.000000Z"
+   text-time="2006-08-27T13:07:37.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="antlr-2.7.6.jar"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="4c8a6a5894748e8ce52d0b1980acf229"
+   prop-time="2006-11-02T05:02:02.000000Z"
+   text-time="2006-08-27T13:07:36.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="antlr-3.0ea8.jar"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="0adcbaa7245eb5870b58ba43c6d02e90"
+   prop-time="2006-11-02T05:02:01.000000Z"
+   text-time="2006-08-27T13:07:36.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="commons-jci-core-1.0-406301.jar"
+   committed-rev="2"/>
+<entry
+   checksum="4ec0e504be0d9b65c49ffe0e18869d34"
+   prop-time="2006-11-02T05:01:46.000000Z"
+   text-time="2006-08-27T13:07:37.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="commons-jci-janino-2.4.3.jar"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="51591549f1662a64543f08a1d4a0cf87"
+   prop-time="2006-11-02T05:01:59.000000Z"
+   text-time="2006-08-27T13:07:36.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="commons-lang-2.1.jar"
+   committed-rev="2"/>
+<entry
+   checksum="0b98e0895cd4e66c3eb4c511de112163"
+   prop-time="2006-11-02T05:01:49.000000Z"
+   text-time="2006-08-27T13:07:36.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="commons-logging-api-1.0.4.jar"
+   committed-rev="2"/>
+<entry
+   checksum="431b0ddd49289f7d50535ab95bbf67ef"
+   prop-time="2006-11-02T05:02:01.000000Z"
+   text-time="2006-08-27T13:07:37.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="drools-compiler-3.0.1.jar"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="92dd2d5539a4909339227613590fce56"
+   prop-time="2006-11-02T05:01:52.000000Z"
+   text-time="2006-08-27T13:07:36.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="drools-core-3.0.1.jar"
+   committed-rev="2"/>
+<entry
+   checksum="21acd347403fd6b896ba3cc7b5169ebb"
+   prop-time="2006-11-02T05:01:49.000000Z"
+   text-time="2006-08-27T13:07:36.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="janino-2.4.3.jar"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="57e44d3f31a311aca71fff09e6d22f1a"
+   prop-time="2006-11-02T05:01:46.000000Z"
+   text-time="2006-08-27T13:07:37.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="stringtemplate-2.3b6.jar"
+   committed-rev="2"/>
+</wc-entries>

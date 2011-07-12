@@ -1,0 +1,37 @@
+<application>
+	<display-name>chapter9_security</display-name>
+
+	<module>
+		<web>
+			<web-uri>chapter9_security.war</web-uri>
+			<context-root>/chapter9_security</context-root>
+		</web>
+	</module>
+	<module>
+		<ejb>chapter9_security-business.ejb3</ejb>
+	</module>
+	<module>
+		<java>jboss-seam.jar</java>
+	</module>
+	<module>
+		<java>drools-core-3.0.1.jar</java>
+	</module>	
+	<module>
+		<java>drools-compiler-3.0.1.jar</java>
+	</module>	
+	<module>
+		<java>commons-jci-janino-2.4.3.jar</java>
+	</module>
+	<module>
+		<java>commons-jci-core-1.0-406301.jar</java>
+	</module>
+	<module>
+		<java>janino-2.4.3.jar</java>
+	</module>
+	<module>
+		<java>antlr-2.7.6.jar</java>
+	</module>
+	<module>
+		<java>antlr-3.0ea8.jar</java>
+	</module>
+</application>

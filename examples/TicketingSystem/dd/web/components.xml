@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<components xmlns:core="http://jboss.com/products/seam/core"
+            xmlns:framework="http://jboss.com/products/seam/framework"
+            xmlns:drools="http://jboss.com/products/seam/drools"            
+            xmlns:security="http://jboss.com/products/seam/security">
+
+	<!-- JNDI lookup of our EJBs -->
+    <core:init debug="true" jndi-pattern="ticketing-system/#{ejbName}/local" />
+    
+    <core:manager conversation-timeout="120000" 
+                  concurrent-request-timeout="500"
+                  conversation-id-parameter="cid"
+                  conversation-is-long-running-parameter="clr"/>
+                      
+    <!-- JBPM Definitions for the Flows--> 
+    <core:jbpm> 
+		<core:process-definitions> 
+			<value>ticketing-system.jpdl.xml</value> 
+		</core:process-definitions> 
+	</core:jbpm> 
+	
+	<!-- Security used for login -->
+	<security:identity authenticate-method="#{authenticationAction.authenticate}"/> 
+	
+    <drools:rule-base name="securityRules">
+    	<drools:rule-files><value>/META-INF/security-rules.drl</value></drools:rule-files>
+	</drools:rule-base>	
+
+<!--
+	<core:managed-persistence-context name="entityManager"
+		auto-create="true"
+		persistence-unit-jndi-name="java:/ticketingSystemEntityManagerFactory" />
+-->
+    <component name="entityManager" auto-create="true" class="org.jboss.seam.core.ManagedPersistenceContext">
+        <property name="persistenceUnitJndiName">java:/ticketingSystemEntityManagerFactory</property>
+    </component>        
+    
+    <component class="org.jboss.seam.servlet.MultipartConfig">
+        <property name="createTempFiles">true</property>
+        <property name="maxRequestSize">1000000</property>
+    </component>    
+      
+</components>
+
+ 

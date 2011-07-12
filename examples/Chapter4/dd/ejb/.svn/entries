@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/dd/ejb"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="dcc16b66897498bb7ec8450b480b14b7"
+   text-time="2006-07-06T15:22:35.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="persistence.xml"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

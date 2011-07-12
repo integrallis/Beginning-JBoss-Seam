@@ -1,0 +1,5 @@
+package SeamSpacePermissions;
+
+import org.jboss.seam.security.Identity;
+import org.jboss.seam.security.rules.PermissionCheck;
+import org.jboss.seam.example.seamspace.MemberImage;

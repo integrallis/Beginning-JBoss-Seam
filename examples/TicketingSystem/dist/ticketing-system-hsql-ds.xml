@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<datasources>
+    <local-tx-datasource>
+        <jndi-name>ticketingSystemDataSource</jndi-name>
+        <connection-url>jdbc:hsqldb:.</connection-url>
+        <driver-class>org.hsqldb.jdbcDriver</driver-class>
+        <user-name>sa</user-name>
+        <password></password>
+    </local-tx-datasource>
+</datasources>
+
+-->
+<datasources>
+    <local-tx-datasource>
+        <jndi-name>ticketingSystemDataSource</jndi-name>
+        <connection-url>jdbc:hsqldb:${jboss.server.data.dir}${/}hypersonic${/}ticketingSystem</connection-url>
+        <connection-url>jdbc:hsqldb:.</connection-url>
+        <driver-class>org.hsqldb.jdbcDriver</driver-class>
+        <user-name>sa</user-name>
+        <password></password>
+    </local-tx-datasource>
+
+    <mbean code="org.jboss.jdbc.HypersonicDatabase" 
+           name="jboss:service=Hypersonic,database=ticketingSystem">
+        <attribute name="Database">ticketingSystem</attribute>
+        <attribute name="InProcessMode">true</attribute>
+    </mbean>  
+
+</datasources>
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/lib/faces"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="9a48458fe8425e93a485f2b200f903af"
+   prop-time="2006-11-02T05:01:54.000000Z"
+   text-time="2006-08-27T13:07:09.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="el-api.jar"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="2efa5b151327da0acd519790d6c05acd"
+   prop-time="2006-11-02T05:01:44.000000Z"
+   text-time="2006-08-27T13:07:09.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="el-ri.jar"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="090ea63968d5cdf6c75df855cca05a1d"
+   prop-time="2006-11-02T05:01:53.000000Z"
+   text-time="2006-08-27T13:07:09.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="jsf-facelets.jar"
+   committed-rev="2"/>
+</wc-entries>

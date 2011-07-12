@@ -1,0 +1,51 @@
+package com.integrallis.ticketing.domain;
+
+import java.util.Date;
+
+import org.jboss.seam.annotations.Name;
+
+//@Entity
+@Name("ticketOwner")
+public class TicketOwner {
+
+//    @Id
+//    @GeneratedValue
+    private int ticketOwnerId;
+    private String name;
+    private Date ownerStartDt;
+    private Date ownerEndDt;
+    //private Ticket ticket;
+    
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public Date getOwnerEndDt() {
+        return ownerEndDt;
+    }
+    public void setOwnerEndDt(Date ownerEndDt) {
+        this.ownerEndDt = ownerEndDt;
+    }
+    public Date getOwnerStartDt() {
+        return ownerStartDt;
+    }
+    public void setOwnerStartDt(Date ownerStartDt) {
+        this.ownerStartDt = ownerStartDt;
+    }
+//    public Ticket getTicket() {
+//        return ticket;
+//    }
+//    public void setTicket(Ticket ticket) {
+//        this.ticket = ticket;
+//    }
+    public int getTicketOwnerId() {
+        return ticketOwnerId;
+    }
+    public void setTicketOwnerId(int ticketOwnerId) {
+        this.ticketOwnerId = ticketOwnerId;
+    }
+    
+    
+}

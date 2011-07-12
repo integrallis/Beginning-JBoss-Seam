@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<components xmlns:core="http://jboss.com/products/seam/core"
+            xmlns:framework="http://jboss.com/products/seam/framework">
+
+    <core:init debug="true" jndi-pattern="garage-sale/#{ejbName}/local" />
+    	
+<!-- 
+    <framework:entity-query name="garageSales" 
+                            entity-manager="#{entityManager}">
+		<framework:ejbql>from House</framework:ejbql>
+	</framework:entity-query>         	                                               
+
+	<core:managed-persistence-context name="entityManager"
+		persistence-unit-jndi-name="java:/garageSaleEntityManagerFactory" />
+ -->    	
+</components>
+
+ 

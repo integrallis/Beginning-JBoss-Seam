@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="2"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter3/src/java/com/petradesigns/backingbean"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="dir"
+   name=""
+   committed-rev="2"/>
+<entry
+   checksum="5922b8678daba65558162e9781616098"
+   text-time="2006-09-27T14:45:22.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="CreditCardBackingBean.java"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="165bdc4605cb79a0e51bef0037323780"
+   text-time="2006-09-27T14:45:22.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="DataModelExample.java"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="621dd14063dd9243688c208b99709f2f"
+   text-time="2006-09-27T14:45:22.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="HelloWorld.java"
+   committed-rev="2"/>
+<entry
+   checksum="ffadecaf1caa61064aaca8ab1c578c17"
+   text-time="2006-09-28T00:35:26.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="HelloWorldInteractive.java"
+   committed-rev="2"/>
+</wc-entries>

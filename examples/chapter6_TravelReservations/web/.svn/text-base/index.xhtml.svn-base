@@ -1,0 +1,23 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                             "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:s="http://jboss.com/products/seam/taglib">
+    
+<ui:define name="content">	
+	<h:form>
+		<s:link action="#{bookingCart.starTravelPlans}" 
+				value="S Link to Start a booking cart"/><br/>
+				
+		<h:commandLink action="#{bookingCart.starTravelPlans}" 
+				value="S Link to Start a booking cart"/><br/>				
+				
+	</h:form>
+</ui:define>	
+
+You are allowed to book one flight but multiple hotels and cars.
+
+
+</ui:composition>

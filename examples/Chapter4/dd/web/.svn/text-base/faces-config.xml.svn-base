@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE faces-config PUBLIC
+  "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN"
+  "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
+
+<faces-config>
+
+  <!--  Garage Sale Navigation -->
+  <navigation-rule>
+   <from-view-id>*</from-view-id>
+    <navigation-case>
+     <from-outcome>edit</from-outcome>
+     <to-view-id>/garageSale/houseEdit.faces</to-view-id>
+   </navigation-case>
+  </navigation-rule>
+  
+  <navigation-rule>
+   <navigation-case>
+     <from-action>#{garageSale.addHouse}</from-action>
+     <from-outcome>success</from-outcome>
+     <to-view-id>/garageSale/homeSuccess.faces</to-view-id>
+   </navigation-case>
+   
+   <navigation-case>
+     <from-action>#{garageSale.saveHouse}}</from-action>
+     <from-outcome>success</from-outcome>
+     <to-view-id>/garageSale/houseList.faces</to-view-id>
+   </navigation-case>
+  </navigation-rule>
+  
+  <!--  Garage Sale -->
+  <managed-bean>
+    <managed-bean-name>garageSale</managed-bean-name>
+    <managed-bean-class>com.petradesigns.garageSale.backingbean.GarageSaleAction</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+
+    
+</faces-config>

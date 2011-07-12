@@ -1,0 +1,16 @@
+<application>
+	<display-name>chapter8_ajax</display-name>
+
+	<module>
+		<web>
+			<web-uri>chapter8_ajax.war</web-uri>
+			<context-root>/chapter8_ajax</context-root>
+		</web>
+	</module>
+	<module>
+		<ejb>chapter8_ajax-business.ejb3</ejb>
+	</module>
+	<module>
+		<java>jboss-seam.jar</java>
+	</module>
+</application>

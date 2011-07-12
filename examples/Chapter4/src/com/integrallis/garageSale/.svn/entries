@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   schedule="add"
+   repos="http://petradesigns.com/repository"
+   revision="0"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/src/com/integrallis/garageSale"
+   name=""
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="dir"
+   name="backingbean"/>
+<entry
+   schedule="add"
+   name="domain"
+   kind="dir"/>
+<entry
+   schedule="add"
+   name="ejb"
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="dir"
+   name="service"/>
+</wc-entries>

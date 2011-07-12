@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE faces-config 
+PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+                            "http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+<faces-config>
+	
+	<!--  phase listner adds request and other things -->
+	<lifecycle>
+		<phase-listener>org.jboss.seam.jsf.SeamPhaseListener</phase-listener>
+	</lifecycle>
+
+	<render-kit>
+	<!-- needed due to a change in MyFaces implementation -->
+	    <renderer>
+		    <component-family>javax.faces.Command</component-family>
+		    <renderer-type>javax.faces.Button</renderer-type>
+		    <renderer-class>org.apache.myfaces.renderkit.html.jsf.ExtendedHtmlButtonRenderer</renderer-class>
+		</renderer>
+		
+		<renderer>
+		    <component-family>javax.faces.Command</component-family>
+		    <renderer-type>javax.faces.Link</renderer-type>
+		    <renderer-class>org.apache.myfaces.renderkit.html.jsf.ExtendedHtmlLinkRenderer</renderer-class>
+		</renderer>
+  	</render-kit>
+</faces-config>

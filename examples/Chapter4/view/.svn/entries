@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/view"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="00f29222179f89cb7401972e173ca37c"
+   text-time="2006-06-18T16:20:31.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="book.xhtml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="6fd569edb118474cc6df31d91db10988"
+   text-time="2006-06-18T16:20:29.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="confirm.xhtml"
+   committed-rev="2"/>
+<entry
+   checksum="b143a075a8e4048ed34b7329a2878065"
+   text-time="2006-10-08T18:10:31.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="conversations.xhtml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   name="css"
+   kind="dir"/>
+<entry
+   kind="dir"
+   name="exp"/>
+<entry
+   checksum="5920088d4231efa84a274df7c6dd886d"
+   text-time="2006-06-18T16:20:20.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="home.xhtml"
+   committed-rev="2"/>
+<entry
+   checksum="98efdb9d2d2ce5a5cbf8e0c5a86710c1"
+   text-time="2006-06-18T16:20:32.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="hotel.xhtml"
+   committed-rev="2"/>
+<entry
+   name="img"
+   kind="dir"/>
+<entry
+   checksum="1cebddc610d203a827fa5bed13aac666"
+   text-time="2006-06-18T16:20:28.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="index.html"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="ca5d19ef37a5ab778eebcb47fcf4d2a5"
+   text-time="2006-06-18T16:20:28.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="main.xhtml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="bd35ef8dbe13f4d42b6e0f45a844ef48"
+   text-time="2006-06-18T16:20:27.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="password.xhtml"
+   committed-rev="2"/>
+<entry
+   checksum="76c32dae863357d3a785f25ef0fa32ef"
+   text-time="2006-06-18T16:20:28.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="register.xhtml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="b3153f821cfe718a4c1e47c418f4e8d0"
+   text-time="2006-06-18T16:20:29.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="template.xhtml"
+   committed-rev="2"/>
+</wc-entries>

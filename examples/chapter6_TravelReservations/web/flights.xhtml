@@ -1,0 +1,66 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	    		xmlns:ui="http://java.sun.com/jsf/facelets"
+	  			xmlns:h="http://java.sun.com/jsf/html"
+	  			xmlns:f="http://java.sun.com/jsf/core"
+	  			xmlns:s="http://jboss.com/products/seam/taglib"
+				template="template.xhtml">
+
+<!-- content -->
+<ui:define name="content">
+	<h2>Select a Flight</h2><br />
+	<h:dataTable var="flight" value="#{flightList}">
+		<h:column> 
+			<f:facet name="header"><h:outputText value="Flight Number"/></f:facet> 
+			<h:outputText value="#{flight.flightId}"/> 
+		</h:column> 
+		
+		<h:column> 
+			<f:facet name="header"><h:outputText value="Flight"/></f:facet> 
+			<h:outputText value="#{flight.airline}"/> 
+		</h:column> 		
+		
+		<h:column> 
+			<f:facet name="header"><h:outputText value="Departure"/></f:facet> 
+			<h:outputText value="#{flight.fromAirport}"/> 
+		</h:column> 
+		
+		<h:column> 
+			<f:facet name="header"><h:outputText value="Arrival"/></f:facet> 
+			<h:outputText value="#{flight.toAirport}"/> 
+		</h:column> 
+		
+		<h:column> 
+			<f:facet name="header"><h:outputText value="Deaprture Time"/></f:facet> 
+			<h:outputText value="#{flight.departureTime}">
+				<f:convertDateTime pattern="h:mm aa"/> 
+			</h:outputText>
+		</h:column> 
+		
+		<h:column> 
+			<f:facet name="header"><h:outputText value="Arrival Time"/></f:facet> 
+			<h:outputText value="#{flight.arrivalTime}">
+				<f:convertDateTime pattern="h:mm aa"/>
+			</h:outputText> 
+		</h:column> 								
+		
+		<h:column> 
+			<f:facet name="header"><h:outputText value="Cost"/></f:facet> 
+			<h:outputText value="#{flight.cost}"> 
+				<f:convertNumber pattern="$####.##" />
+			</h:outputText>
+		</h:column> 	
+		
+		<h:column>
+			<f:facet name="header"><h:outputText value="Select Departure Flight"/></f:facet> 
+           <s:link value="Select" action="#{bookingCart.selectDepartureFlight}" linkStyle="button"/>
+        </h:column>	
+        
+    	<h:column>
+			<f:facet name="header"><h:outputText value="Select Return Flight"/></f:facet> 
+           <s:link value="Select" action="#{bookingCart.selectReturnFlight}" linkStyle="button"/>
+        </h:column>	
+	</h:dataTable> 
+</ui:define>
+
+</ui:composition>

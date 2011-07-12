@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="6"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter8/src"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   name=""
+   kind="dir"
+   committed-rev="6"/>
+<entry
+   name="com"
+   kind="dir"/>
+<entry
+   checksum="d9701193a27087c6385173bceeeb812b"
+   text-time="2006-11-05T02:52:22.000000Z"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   kind="file"
+   name="greeting_en.properties"
+   committed-rev="6"/>
+<entry
+   checksum="1b490c19623771bb2d3f86b5b4340e10"
+   text-time="2006-11-05T02:52:22.000000Z"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   kind="file"
+   name="greeting_es.properties"
+   committed-rev="6"/>
+<entry
+   checksum="f9f0d45efb5f1a8fd489e5afef4bb88c"
+   text-time="2006-11-05T02:52:22.000000Z"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   name="greeting_fr.properties"
+   kind="file"
+   committed-rev="6"/>
+<entry
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   text-time="2006-06-18T16:20:27.000000Z"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   name="seam.properties"
+   kind="file"
+   committed-rev="6"/>
+</wc-entries>

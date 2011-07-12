@@ -1,0 +1,16 @@
+<application>
+	<display-name>Garage Sale Application</display-name>
+
+	<module>
+		<web>
+			<web-uri>garage-sale.war</web-uri>
+			<context-root>/garage-sale</context-root>
+		</web>
+	</module>
+	<module>
+		<ejb>garage-sale-business.ejb3</ejb>
+	</module>
+	<module>
+	    <java>jboss-seam.jar</java>
+	</module>
+</application>

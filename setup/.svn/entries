@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/setup"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="4bf7d2d21dff66bffca4c10a4be9ca20"
+   text-time="2006-10-07T14:28:22.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="database_loading.sql"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

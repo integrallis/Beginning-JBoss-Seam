@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="PackagingTheProject" default="package" basedir=".">
+
+    <description>
+    ============================================================================        
+    Beginning Seam - By Joseph Faisal Nusairat
+    ============================================================================    
+    </description>
+    
+
+    <!-- =================================================================== -->
+    <!-- Target: zip                                                     	 -->
+    <!-- =================================================================== -->
+    <target name="package" description="Package the items">
+    	<zip 	destfile="BeginningJBossSeam.zip"
+    			basedir="./"
+excludes="**/.svn/**,**/._.DS_Store/**,**/dist/**,**/bin/**,masterPackage.xml,**/_MACOSX/**,**/CVS/**"/>        			
+
+				
+    </target>
+    <!-- 
+    
+excludes="**/.svn/**,**/._.DS_Store/**,**/dist/**,**/bin/**,masterPackage.xml,**/_MACOSX/**,**/CVS/**"/>    
+    
+    			excludes=".svn/**"    
+     -->
+</project>

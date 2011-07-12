@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<!-- necessary for ajax4JSF-->
+	<filter>
+		<display-name>Ajax4jsf Filter</display-name>
+		<filter-name>ajax4jsf</filter-name>
+		<filter-class>org.ajax4jsf.Filter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>ajax4jsf</filter-name>
+		<url-pattern>*.seam</url-pattern>
+	</filter-mapping>
+	
+
+	<!-- Neccessary in order to use Ajax4JSF -->
+	<!--
+	<context-param>
+		<param-name>org.ajax4jsf.VIEW_HANDLERS</param-name>
+		<param-value>org.jboss.seam.ui.facelet.SeamFaceletViewHandler</param-value>
+	</context-param>
+	-->
+
+    <!-- Seam -->
+    <!-- implemetns Session and ServletContext Listener -->
+    <!-- those are the two objects it over writes for interfacing. -->
+    <!--  session handles session and request -->
+    <listener>
+        <listener-class>org.jboss.seam.servlet.SeamListener</listener-class>
+    </listener>
+
+    <!-- MyFaces -->
+
+    <listener>
+        <listener-class>org.apache.myfaces.webapp.StartupServletContextListener</listener-class>
+    </listener>
+    
+    <context-param>
+        <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+        <param-value>client</param-value>
+    </context-param>
+    
+    <!--  Seam Debug -->
+    <context-param>
+        <param-name>org.jboss.seam.core.init.debug</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+	<!-- The Seam Remoting Servlet -->
+	<servlet>
+    	<servlet-name>Seam Remoting</servlet-name>
+    	<servlet-class>org.jboss.seam.remoting.SeamRemotingServlet</servlet-class>
+  	</servlet>
+
+  	<servlet-mapping>
+    	<servlet-name>Seam Remoting</servlet-name>
+    	<url-pattern>/seam/remoting/*</url-pattern>
+  	</servlet-mapping>
+  	
+  		<servlet>
+		<servlet-name>Faces Servlet</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<!-- Faces Servlet Mapping -->
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.seam</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

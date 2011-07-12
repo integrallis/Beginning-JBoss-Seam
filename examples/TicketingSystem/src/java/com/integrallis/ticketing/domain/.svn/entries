@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/chapter6_TicketingSystem/src/com/integrallis/ticketing/domain"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="a4985eddb9e7db52e398b3dd28da32ad"
+   text-time="2006-10-28T03:27:18.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="Ticket.java"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="9ab655f22b474a27498f41fbbfd6d58d"
+   text-time="2006-10-28T03:27:18.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="TicketChange.java"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="f308a498b1e322fc07853e795a1e4841"
+   text-time="2006-10-28T03:27:07.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="TicketOwner.java"
+   committed-rev="2"/>
+</wc-entries>

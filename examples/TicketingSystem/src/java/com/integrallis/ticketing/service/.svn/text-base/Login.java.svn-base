@@ -1,0 +1,18 @@
+package com.integrallis.ticketing.service;
+
+/**
+ * This is our interface for our login.
+ * 
+ * @author Joseph F Nusairat
+ *
+ */
+public interface Login {
+
+    String getUser();
+
+    void setUser(String user);
+     
+    String loginHelloWorld();
+    
+    String loginTicketingSystem();     
+}

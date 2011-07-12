@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter3/src/java/com/petradesigns/garageSale/backingbean"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="5623c4e5f1adcf13f3f52a6181b958d9"
+   text-time="2006-09-29T14:33:48.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="GarageSaleAction.java"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

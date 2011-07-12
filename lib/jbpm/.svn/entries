@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/lib/jbpm"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="9f3803b10175629bd26346ea0816b60d"
+   prop-time="2006-11-02T05:01:58.000000Z"
+   text-time="2006-10-22T19:35:49.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="jbpm-3.1.1.jar"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   schedule="add"
+   repos="http://petradesigns.com/repository"
+   revision="0"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter8/web"
+   name=""
+   kind="dir"/>
+<entry
+   schedule="add"
+   name="lang_example1.jsp"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="lang_example2.jsp"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="lang_example3.jsp"/>
+<entry
+   schedule="add"
+   name="lang_example4.jsp"
+   kind="file"/>
+</wc-entries>

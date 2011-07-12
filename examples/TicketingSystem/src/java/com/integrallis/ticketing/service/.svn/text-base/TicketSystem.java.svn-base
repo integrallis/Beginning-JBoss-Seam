@@ -1,0 +1,22 @@
+package com.integrallis.ticketing.service;
+
+
+/**
+ * This is the interface for our ticketing system that will
+ * look up, create our tickets, and send them for approval to 
+ * different locations.
+ * 
+ * @author online
+ *
+ */
+public interface TicketSystem {
+    
+    void listTickets();
+    
+    void createTodo();
+    
+    void done();
+    
+    void destroy();
+
+}

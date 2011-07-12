@@ -1,0 +1,36 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	    		xmlns:ui="http://java.sun.com/jsf/facelets"
+	  			xmlns:h="http://java.sun.com/jsf/html"
+	  			xmlns:f="http://java.sun.com/jsf/core"
+	  			xmlns:s="http://jboss.com/products/seam/taglib"
+				template="template.xhtml">
+
+<!-- content -->
+<ui:define name="content">
+	Select a Flight<br />
+	<h:dataTable var="car" value="#{carList}">
+		<h:column> 
+			<f:facet name="header">Car Type</f:facet> 
+			<h:outputText value="#{car.carType}"/> 
+		</h:column> 
+		
+		<h:column> 
+			<f:facet name="header">Car Company</f:facet> 
+			<h:outputText value="#{car.carCompany}"/> 
+		</h:column> 
+		
+		
+		<h:column> 
+			<f:facet name="header">Cost</f:facet> 
+			<h:outputText value="#{car.cost}"/> 
+		</h:column> 		
+        
+    	<h:column>
+			<f:facet name="selectReturnFlight">Select Car</f:facet> 
+           <s:link value="Select Return" action="#{bookingCart.selectReturnFlight}" linkStyle="button"/>
+        </h:column>	
+	</h:dataTable> 
+</ui:define>
+
+</ui:composition>

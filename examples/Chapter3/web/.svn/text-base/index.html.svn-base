@@ -1,0 +1,8 @@
+
+<h1>Garage Sale Application</h1>
+The purpose of this application is to be able to add and remove from a garage sale.<br />
+
+<hr />
+
+<a href="/chapter3/garageSale/houseList.faces">List of Garage Sales</a><br/>
+<a href="/chapter3/garageSale/houseAdd.faces">Add a Garage Sales</a><br/>

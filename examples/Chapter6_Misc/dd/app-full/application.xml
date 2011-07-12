@@ -1,0 +1,16 @@
+<application>
+	<display-name>Chapter 6 Misc</display-name>
+
+	<module>
+		<web>
+			<web-uri>chapter6_misc.war</web-uri>
+			<context-root>/chapter6_misc</context-root>
+		</web>
+	</module>
+	<module>
+		<ejb>chapter6_misc-business.ejb3</ejb>
+	</module>
+	<module>
+		<java>jboss-seam.jar</java>
+	</module>
+</application>

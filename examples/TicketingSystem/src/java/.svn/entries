@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   schedule="add"
+   repos="http://petradesigns.com/repository"
+   revision="0"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/chapter6_TicketingSystem/src/java"
+   name=""
+   kind="dir"/>
+</wc-entries>

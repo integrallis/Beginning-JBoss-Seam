@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="2"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/chapter6_TicketingSystem/src"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="dir"
+   name=""
+   committed-rev="2"/>
+<entry
+   kind="dir"
+   name="com"/>
+<entry
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   text-time="2006-06-18T16:20:27.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="seam.properties"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

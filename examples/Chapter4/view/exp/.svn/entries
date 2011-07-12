@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/view/exp"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="07935e21e80198a93caa0614688c69cf"
+   text-time="2006-06-18T16:20:24.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="bookingExp.html"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="61f8bd918ae5d60019d801335b29f0ac"
+   text-time="2006-06-18T16:20:30.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="confirmExp.html"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="0ff448526fc92dda6137a5257af88e0b"
+   text-time="2006-06-18T16:20:32.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="introExp.html"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="575a1a61b3b1708613fed5bb0d297ea5"
+   text-time="2006-06-18T16:20:28.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="loginExp.html"
+   committed-rev="2"/>
+<entry
+   checksum="4fe48da5314bbce997753b2fe9bfde7e"
+   text-time="2006-06-18T16:20:23.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="mainExp.html"
+   committed-rev="2"/>
+<entry
+   checksum="2aff4a1c7987f7cafc6b245cf08c670e"
+   text-time="2006-06-18T16:20:28.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="registerExp.html"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="cdc3a7965bf1dbe01e0e743d408b3c9c"
+   text-time="2006-06-18T16:20:22.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="workspaceExp.html"
+   committed-rev="2"/>
+</wc-entries>

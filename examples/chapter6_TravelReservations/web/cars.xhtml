@@ -1,0 +1,37 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	    		xmlns:ui="http://java.sun.com/jsf/facelets"
+	  			xmlns:h="http://java.sun.com/jsf/html"
+	  			xmlns:f="http://java.sun.com/jsf/core"
+	  			xmlns:s="http://jboss.com/products/seam/taglib"
+				template="template.xhtml">
+
+<!-- content -->
+<ui:define name="content">
+	<h2>Select a Flight</h2><br />
+	<h:dataTable var="car" value="#{carList}">
+		<h:column> 
+			<f:facet name="header"><h:outputText value="Car Type"/></f:facet> 
+			<h:outputText value="#{car.carType}"/> 
+		</h:column> 
+		
+		<h:column> 
+			<f:facet name="header"><h:outputText value="Car Company"/></f:facet> 
+			<h:outputText value="#{car.carCompany}"/> 
+		</h:column> 		
+		
+		<h:column> 
+			<f:facet name="header"><h:outputText value="Cost"/></f:facet> 
+			<h:outputText value="#{car.cost}"> 
+				<f:convertNumber pattern="$####.##" />
+			</h:outputText>			
+		</h:column> 		
+        
+    	<h:column>
+			<f:facet name="header"><h:outputText value="Select"/></f:facet> 
+           <s:link value="Select" action="#{bookingCart.selectCar}" linkStyle="button"/>
+        </h:column>	
+	</h:dataTable> 
+</ui:define>
+
+</ui:composition>

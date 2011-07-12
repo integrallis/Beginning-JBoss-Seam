@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="6"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter8/src/com"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   name=""
+   kind="dir"
+   committed-rev="6"/>
+<entry
+   name="integrallis"
+   kind="dir"/>
+</wc-entries>

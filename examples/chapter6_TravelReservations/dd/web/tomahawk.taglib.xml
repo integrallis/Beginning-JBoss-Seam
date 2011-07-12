@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE facelet-taglib PUBLIC
+  "-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN"
+  "http://java.sun.com/dtd/facelet-taglib_1_0.dtd">
+
+<facelet-taglib>
+    <namespace>http://myfaces.apache.org/tomahawk</namespace>
+
+    <tag>
+        <tag-name>aliasBean</tag-name>
+        <component>
+            <component-type>org.apache.myfaces.AliasBean</component-type>
+            <renderer-type>org.apache.myfaces.AliasBean</renderer-type>
+        </component>
+    </tag>
+    
+    <tag>
+        <tag-name>inputCalendar</tag-name>
+        <component>
+            <component-type>org.apache.myfaces.HtmlInputCalendar</component-type>
+            <renderer-type>org.apache.myfaces.Calendar</renderer-type>
+        </component>
+    </tag>
+    
+    <tag>
+        <tag-name>inputDate</tag-name>
+        <component>
+            <component-type>org.apache.myfaces.HtmlInputDate</component-type>
+            <renderer-type>org.apache.myfaces.Date</renderer-type>
+        </component>
+    </tag>
+    
+</facelet-taglib>    

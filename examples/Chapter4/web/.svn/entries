@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="2"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/web"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="dir"
+   name=""
+   committed-rev="2"/>
+<entry
+   checksum="05648b391e27821325e9a04864e93482"
+   schedule="delete"
+   text-time="2006-09-04T01:52:03.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="credit_card_example.jsp"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   kind="dir"
+   name="garageSale"/>
+<entry
+   schedule="delete"
+   checksum="c9c1f089e4fefa95736bab8901bdf7f4"
+   text-time="2006-08-30T00:35:42.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="greeting.jsp"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="1190a7d91de1b08af38d05be8dcb536d"
+   schedule="delete"
+   text-time="2006-08-27T16:25:26.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="helloWorld.jsp"
+   committed-rev="2"/>
+<entry
+   checksum="8f76a24522560f7f02b9845561bb4a0a"
+   text-time="2006-09-27T23:58:04.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="index.html"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   schedule="delete"
+   checksum="9d603f342fdc075334e607d4567d359b"
+   text-time="2006-09-28T00:40:18.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="input.jsp"
+   committed-rev="2"/>
+</wc-entries>

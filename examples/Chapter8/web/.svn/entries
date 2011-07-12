@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="6"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter8/web"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   kind="dir"
+   name=""
+   committed-rev="6"/>
+<entry
+   checksum="437785fb935c780d1b2a26d603b04ce2"
+   text-time="2006-11-05T02:55:36.000000Z"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   kind="file"
+   name="lang_example1.jsp"
+   committed-rev="6"/>
+<entry
+   checksum="d67154b7955c88bb5e230a654f3255a7"
+   text-time="2006-11-05T03:35:14.000000Z"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   name="lang_example2.jsp"
+   kind="file"
+   committed-rev="6"/>
+<entry
+   checksum="f2c90e8efc13c82aae4c92b701e3e81e"
+   text-time="2006-11-05T03:39:52.000000Z"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   name="lang_example3.jsp"
+   kind="file"
+   committed-rev="6"/>
+<entry
+   checksum="3b267e1b20a2aa516f89719706e5cb7e"
+   text-time="2006-11-05T03:49:25.000000Z"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   kind="file"
+   name="lang_example4.jsp"
+   committed-rev="6"/>
+</wc-entries>

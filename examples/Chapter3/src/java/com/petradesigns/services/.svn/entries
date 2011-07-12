@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter3/src/java/com/petradesigns/services"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="0c7056d0c915557276eb13ea10f76444"
+   text-time="2006-09-28T00:58:24.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="SalesManager.java"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

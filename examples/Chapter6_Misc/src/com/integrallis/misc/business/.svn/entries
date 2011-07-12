@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter6_Misc/src/com/integrallis/misc/business"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="642a0a4fe1f4b138f001d4164aee492e"
+   text-time="2006-10-31T01:50:25.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="CoursesActionNonPage.java"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="e1683d080e2f844a6a114379b920549b"
+   text-time="2006-10-31T01:50:14.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="CoursesActionPage.java"
+   committed-rev="2"/>
+<entry
+   checksum="a7d9381f0bff4d27c7e6c39b869d31fd"
+   text-time="2006-11-02T03:54:20.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="NextPageAction.java"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="cfa6e883eb2187b16382db71b64c4067"
+   text-time="2006-11-02T03:55:39.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="SessionExampleAction.java"
+   committed-rev="2"/>
+<entry
+   checksum="4f41791806e03baf92c5df7ce6b68b7a"
+   text-time="2006-10-17T17:06:46.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="StatelessHelloWorld.java"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

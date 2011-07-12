@@ -1,0 +1,62 @@
+package com.integrallis.ticketing.business;
+
+import org.jboss.seam.annotations.In;
+import org.jboss.seam.annotations.Logger;
+import org.jboss.seam.annotations.Name;
+import org.jboss.seam.core.Actor;
+import org.jboss.seam.log.Log;
+
+import com.integrallis.ticketing.service.Login;
+
+/**
+ * This is a simple java bean to handle logging in.
+ * 
+ * By default anyone can login, but we need a user name so that 
+ * we can track the user and the group throughout different pages
+ * in the business process.
+ * 
+ * @author Joseph F Nusairat
+ *
+ */
+@Name("login")
+public class LoginAction implements Login {
+   
+    @Logger
+    Log log;
+        
+   @In(create=true) 
+   private Actor actor;
+   
+   private String user;
+   
+   /**
+    * This portion will log us into the Hello World part of the app.
+    * 
+    * @return
+    */
+   public String loginHelloWorld()
+   {
+       log.debug("Log in to $user");
+       actor.setId(user);
+       return "/helloWorld.xhtml";
+   }
+   
+   /**
+    * This part will log you into the ticketing system.
+    * 
+    * @return
+    */
+   public String loginTicketingSystem() {
+       log.debug("Log in to $user");
+       actor.setId(user);
+       return "/helloWorld.xhtml";
+   }
+   
+   public String getUser() {
+       return user;
+    }
+
+    public void setUser(String user) {
+       this.user = user;
+    }
+}

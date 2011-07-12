@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/chapter6_TravelReservations"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   name="bin"
+   kind="dir"/>
+<entry
+   checksum="b9c011326032baaf2eabaea61e37bbaf"
+   prop-time="2006-11-02T05:01:58.000000Z"
+   text-time="2006-10-06T00:38:49.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="build.properties"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="996a7acdec8b3902cdba73e24a6b279c"
+   text-time="2006-10-28T01:53:23.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="build_ch6_tr.xml"
+   committed-rev="2"/>
+<entry
+   kind="dir"
+   name="dd"/>
+<entry
+   name="dist"
+   kind="dir"/>
+<entry
+   kind="dir"
+   name="src"/>
+<entry
+   name="web"
+   kind="dir"/>
+</wc-entries>

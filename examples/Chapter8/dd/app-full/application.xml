@@ -1,0 +1,16 @@
+<application>
+	<display-name>Garage Sale</display-name>
+
+	<module>
+		<web>
+			<web-uri>chapter8.war</web-uri>
+			<context-root>/chapter8</context-root>
+		</web>
+	</module>
+	<module>
+		<ejb>chapter8-business.ejb3</ejb>
+	</module>
+	<module>
+		<java>jboss-seam.jar</java>
+	</module>
+</application>

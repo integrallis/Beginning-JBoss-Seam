@@ -1,0 +1,7 @@
+<jboss-app>
+<!-- 
+      <loader-repository> 
+      seam.jboss.org:loader=chapter8_ajax
+      </loader-repository> 
+ -->      
+</jboss-app> 

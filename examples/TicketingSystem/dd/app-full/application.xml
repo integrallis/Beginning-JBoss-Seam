@@ -1,0 +1,58 @@
+<application xmlns="http://java.sun.com/xml/ns/j2ee" version="1.4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com /xml/ns/j2ee 
+                        http://java.sun.com/xml/ns/j2ee/application_1_4.xsd">
+                        
+	<display-name>Ticketing System</display-name>
+
+	<module>
+		<ejb>ticketing-system-business.ejb3</ejb>
+	</module>
+	<module>
+		<web>
+			<web-uri>ticketing-system.war</web-uri>
+			<context-root>/ticketing-system</context-root>
+		</web>
+	</module>	
+	<module>
+		<java>jboss-seam.jar</java>
+	</module>
+	<!-- JBPM Jar -->
+	<module>
+		<java>jbpm-3.1.4.jar</java>
+	</module>
+    <module>
+        <java>el-api.jar</java>
+    </module>
+    <module>
+        <java>el-ri.jar</java>
+    </module>	
+	<!-- Drools Additions -->
+	<module>
+		<java>drools-compiler-3.0.5.jar</java>
+	</module>		
+	<module>
+		<java>drools-core-3.0.5.jar</java>
+	</module>
+	<module>
+		<java>commons-jci-core-1.0-406301.jar</java>
+	</module>		
+	<module>
+		<java>commons-jci-janino-2.4.3.jar</java>
+	</module>
+	<module>
+		<java>commons-lang-2.1.jar</java>
+	</module>	
+	<module>
+		<java>janino-2.4.3.jar</java>
+	</module>	
+	<module>
+		<java>stringtemplate-2.3b6.jar</java>
+	</module>	
+	<module>
+		<java>antlr-2.7.6.jar</java>
+	</module>
+	<module>
+		<java>antlr-3.0ea8.jar</java>
+	</module>
+</application>

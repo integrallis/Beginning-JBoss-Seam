@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="7"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter8_ajax"
+   committed-date="2006-11-11T18:59:39.670000Z"
+   kind="dir"
+   name=""
+   committed-rev="7"/>
+</wc-entries>

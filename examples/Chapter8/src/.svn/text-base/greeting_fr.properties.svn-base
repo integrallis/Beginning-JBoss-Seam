@@ -1,0 +1,5 @@
+
+hello=Bonjour
+helloPerson=Bonjour #{user.name}
+howAreYou=Comment ca-va?
+thankYou=Merci

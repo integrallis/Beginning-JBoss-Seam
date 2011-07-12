@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter3"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   name="bin"
+   kind="dir"/>
+<entry
+   checksum="3b3e0e08f50ee3803b78e2cee7c3e649"
+   prop-time="2006-11-02T05:01:56.000000Z"
+   text-time="2006-09-27T14:50:47.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="build.properties"
+   committed-rev="2"/>
+<entry
+   checksum="65416b471a59b6da1012efcae84f7ad8"
+   text-time="2006-09-29T15:33:08.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="build_ch3.xml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   kind="dir"
+   name="dd"/>
+<entry
+   name="dist"
+   kind="dir"/>
+<entry
+   kind="dir"
+   name="src"/>
+<entry
+   name="web"
+   kind="dir"/>
+</wc-entries>

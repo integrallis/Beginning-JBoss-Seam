@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter3/src/java/com/petradesigns/faces/component"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="f9c700cd035b1dabd2c1118691cde4d5"
+   text-time="2006-09-04T01:30:31.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="CreditCardInput.java"
+   committed-rev="2"/>
+<entry
+   checksum="9127a5789354a05a2d14cd48ffe82d3c"
+   text-time="2006-09-04T02:08:44.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="CreditCardRenderer.java"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="1a63a9c51de6be091c2c7b253f672bac"
+   text-time="2006-09-04T01:15:23.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="CreditCardTag.java"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

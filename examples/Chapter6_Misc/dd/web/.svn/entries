@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter6_Misc/dd/web"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="caffe934a4e06bade907006839018bdf"
+   text-time="2006-10-30T02:26:48.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="components.xml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="3d07ca5b40927ca51251b51abcf62dee"
+   text-time="2006-10-30T02:21:41.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="faces-config.xml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="2b1be2546d962bfcbe99e020cc9c65ce"
+   text-time="2006-10-30T02:22:14.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="web.xml"
+   committed-rev="2"/>
+</wc-entries>

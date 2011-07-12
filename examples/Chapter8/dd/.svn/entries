@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="5"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter8/dd"
+   committed-date="2006-11-08T04:23:20.121000Z"
+   kind="dir"
+   name=""
+   committed-rev="5"/>
+</wc-entries>

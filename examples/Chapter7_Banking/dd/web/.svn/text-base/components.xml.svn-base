@@ -1,0 +1,31 @@
+
+
+<components>
+
+    <component name="org.jboss.seam.core.init">
+        <property name="debug">true</property>
+        <property name="myFacesLifecycleBug">true</property>
+        <property name="jndiPattern">chapter6_ts/#{ejbName}/local</property>
+    </component>
+
+    <component name="org.jboss.seam.core.manager">
+        <property name="conversationTimeout">120000</property>
+    </component>
+    
+    <component class="org.jboss.seam.core.Ejb" installed="false"/>
+    
+    
+    <!-- The process definitions to use jBPM goes here -->
+    <!-- 
+    <component class="org.jboss.seam.core.Jbpm">
+        <property name="processDefinitions">ticketing-system.jpdl.xml</property>
+        <property name="pageflowDefinitions">new-ticket.jpdl.xml, existing-ticket.jpdl.xml</property>
+    </component>
+    -->
+    <component class="org.jboss.seam.core.Jbpm">
+        <property name="processDefinitions">hello-world.jpdl.xml</property>
+    </component>
+        
+</components>
+
+ 

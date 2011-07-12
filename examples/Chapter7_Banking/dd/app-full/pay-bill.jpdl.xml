@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<pageflow-definition name="pay-bill">
+
+    <start-state name="start">
+        <transition to="payment-amount"/>
+    </start-state>
+
+	<page name="payment-amount" view-id="/payment.jsp">
+        <transition name="next" to="payment-type"/>
+	</page>
+
+	<page name="payment-type" view-id="/payment_type.jsp"
+          no-conversation-view-id="/payment.jsp">
+        <redirect/>
+        <transition name="next" to="payment-type-decision"/>
+	</page>
+	
+	<decision name="payment-type-decision" expression="#{paymentManager.isNewAccountType}">
+        <transition name="true" to="complete">
+			<action expression="#{paymentManager.createPayment}"/>
+		</transition>        
+        <transition name="false" to="create-account"/>	
+    </decision>
+
+	<page name="create-acount" view-id="/create_account.jsp"
+          no-conversation-view-id="/payment.jsp">
+        <redirect/>
+        <transition name="next" to="complete">
+			<action expression="#{paymentManager.createPayment}"/>
+		</transition>
+	</page>
+	
+	<page name="complete" view-id="/complete.jsp"
+          no-conversation-view-id="/payment.jsp">
+        <redirect/>
+        <end-conversation/>
+    </page>
+    
+	    
+</pageflow-definition>

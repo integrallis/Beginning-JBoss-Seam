@@ -1,0 +1,81 @@
+8
+
+dir
+2
+http://petradesigns.com/repository/BeginningJBossSeam/examples
+http://petradesigns.com/repository
+
+
+
+2006-11-02T05:14:19.044000Z
+2
+
+
+
+svn:special svn:externals svn:needs-lock
+
+Chapter8_ajax
+dir
+
+Chapter1_HelloWorld
+dir
+
+
+
+delete
+
+chapter6_TicketingSystem
+dir
+
+Chapter9_ec
+dir
+
+
+
+add
+
+Chapter1
+dir
+
+
+
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter1_HelloWorld
+2
+
+Chapter6_Misc
+dir
+
+TicketingSystem2
+dir
+
+
+
+add
+
+Chapter3
+dir
+
+Chapter4
+dir
+
+Chapter8
+dir
+
+chapter6_TravelReservations
+dir
+

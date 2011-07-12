@@ -1,0 +1,182 @@
+package com.petradesigns.garageSale.backingbean;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.ejb.EJB;
+import javax.faces.context.FacesContext;
+import javax.faces.event.ActionEvent;
+import javax.faces.model.DataModel;
+import javax.faces.model.DataModelEvent;
+import javax.faces.model.DataModelListener;
+import javax.faces.model.ListDataModel;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+import com.petradesigns.garageSale.domain.House;
+import com.petradesigns.garageSale.service.GarageSale;
+
+
+public class GarageSaleAction implements Serializable {
+    
+    private static final long serialVersionUID = 2316088692634472159L;
+
+    private static final String SUCCESS = "success";
+    
+    // house no pointing to an entity bean
+    @EJB
+    House house;
+        
+    @EJB(name="GarageSaleManager")
+    GarageSale garageSaleManager;
+    
+    // For house listing
+    List<House> houses = null;
+    DataModel houseDataModel = null;
+    
+    public String addHouse() {
+        System.out.println("addHouse - ");        
+        System.out.println("The House> " + house);
+        
+        garageSaleManager.addHouse(house);              
+        
+        return "edit";
+    }  
+    
+    /**
+     * This is used to delete a house.
+     * 
+     * @param e
+     * @return
+     */
+    public String deleteHouse(ActionEvent e) {
+        System.out.println("Delete the house - " + houses.size());
+        House house = (House)houseDataModel.getRowData();
+        System.out.println("House to delete>" +houseDataModel.getRowData());
+        houses.remove(house);
+        System.out.println("Deleted - down to - " + houses.size());
+        // TODO - remove from service
+        
+        return SUCCESS;
+    }
+    
+    public String editHouse(ActionEvent e) {
+        
+        System.out.println("Edit House - ");
+        House house = (House)houseDataModel.getRowData();
+        System.out.println("Edit - " + house);
+        this.house = house;
+        
+        return "edit";
+        //return "/garageSale/houseEdit.faces";
+        //return SUCCESS;
+    }
+
+    public String saveHouse() {
+        
+        System.out.println("Save House - " + house);
+        
+        return SUCCESS;
+    }
+    
+    public void setHouseDataModel(DataModel d)
+    {
+      this.houseDataModel = d;
+    }
+    
+    public DataModel getHouseDataModel()
+    {
+      System.out.println("Get Data Table");
+      if (houseDataModel == null)
+      {
+          // set the list of houses
+          if (houses == null) {
+              houses = retrieveHouseList();        
+          }
+          houseDataModel = new ListDataModel(houses);
+          houseDataModel.addDataModelListener(new DataModelListener()
+          {
+              public void rowSelected(DataModelEvent e)
+              {
+                  FacesContext.getCurrentInstance().getExternalContext().
+                         log("phase: " + e.getRowIndex() + "; row seleted:" + e.getRowIndex());
+              }              
+          });
+      }
+      return houseDataModel;
+    }
+    
+    private List<House> retrieveHouseList() {
+        System.out.println("What is it> " +garageSaleManager);
+        System.out.println("What is it 2> " +house);
+try {
+    garageSaleManager = (GarageSale)(new InitialContext()).lookup("garageSale/local");
+} catch (NamingException e) {
+    // TODO Auto-generated catch block
+    System.out.println("Exception caught 1-" + e.getMessage());
+} 
+try {
+    garageSaleManager = (GarageSale)(new InitialContext()).lookup("com.petradesigns.garageSale.ejb.GarageSaleManager");
+} catch (NamingException e) {
+    // TODO Auto-generated catch block
+    System.out.println("Exception caught 2-" + e.getMessage());
+}
+try {
+    garageSaleManager = (GarageSale)(new InitialContext()).lookup("com.petradesigns.garageSale.service.GarageSale");
+} catch (NamingException e) {
+    // TODO Auto-generated catch block
+    System.out.println("Exception caught 3-" + e.getMessage());
+}  
+try {
+    garageSaleManager = (GarageSale)(new InitialContext()).lookup("ejb/garageSale");
+} catch (NamingException e) {
+    // TODO Auto-generated catch block
+    System.out.println("Exception caught 4-" + e.getMessage());
+}  
+try {
+    InitialContext c = new InitialContext();
+    garageSaleManager = (GarageSale)c.lookup("ejb\\garageSale");
+} catch (NamingException e) {
+    // TODO Auto-generated catch block
+    System.out.println("Exception caught 5-" + e.getMessage());
+}  
+try {
+    garageSaleManager = (GarageSale)(new InitialContext()).lookup("java:comp/env/ejb/GarageSaleManager");
+} catch (NamingException e) {
+    // TODO Auto-generated catch block
+    System.out.println("Exception caught 6-" + e.getMessage());
+}
+try {
+    garageSaleManager = (GarageSale)(new InitialContext()).lookup("com.petradesigns.garageSale.ejb.GarageSaleManager");
+} catch (NamingException e) {
+    // TODO Auto-generated catch block
+    System.out.println("Exception caught 7-" + e.getMessage());
+}
+try {
+    garageSaleManager = (GarageSale)(new InitialContext()).lookup("GarageSaleManager");
+} catch (NamingException e) {
+    // TODO Auto-generated catch block
+    System.out.println("Exception caught 8-" + e.getMessage());
+}
+try {
+    garageSaleManager = (GarageSale)(new InitialContext()).lookup(GarageSale.class.getName());
+} catch (NamingException e) {
+    // TODO Auto-generated catch block
+    System.out.println("Exception caught 9-" + e.getMessage());
+}
+        return garageSaleManager.findAll();
+    }
+    
+    public House getHouse() {
+        return house;
+    }
+
+    public void setHouse(House house) {
+        this.house = house;
+    }
+    
+    @EJB(name="garageSale")
+    public void setGarageSale(GarageSale sale) {
+        garageSaleManager = sale; 
+    }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/dd/app-full"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="6b1d882b695f1b4741888638713c5c5d"
+   text-time="2006-09-30T00:07:02.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="application.xml"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

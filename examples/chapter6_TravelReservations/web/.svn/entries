@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="2"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/chapter6_TravelReservations/web"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="dir"
+   name=""
+   committed-rev="2"/>
+<entry
+   kind="dir"
+   name=" css"/>
+<entry
+   checksum="64d78c598ab73f04dbf12e4626fb30b7"
+   text-time="2006-10-12T19:50:56.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="cars.xhtml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="2df2dfe68b051d5937283ab28d814275"
+   text-time="2006-11-01T01:53:24.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="conversationList.xhtml"
+   committed-rev="2"/>
+<entry
+   checksum="fb6ba9e38162ffbd15c184785e0f0bc9"
+   text-time="2006-10-11T14:04:46.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="flights.xhtml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="a5d0d2c8d302ab2c3406e067e4dc1436"
+   text-time="2006-10-12T19:45:26.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="hotels.xhtml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="11dcd4a9812e3124a53c94508ef590ce"
+   text-time="2006-10-25T03:23:34.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="index.xhtml"
+   committed-rev="2"/>
+<entry
+   checksum="e77cd7da7137242d0b0f4ad8def872a1"
+   text-time="2006-11-02T00:41:42.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="sidebar.xhtml"
+   committed-rev="2"/>
+<entry
+   checksum="da4dda542c96e47a792c7b2ce409c1f1"
+   text-time="2006-10-11T14:04:46.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="template.xhtml"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

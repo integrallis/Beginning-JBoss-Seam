@@ -1,0 +1,8 @@
+
+
+In here you will notice quite a bit of java files but no build file.
+
+Therefor running them is not an option.
+
+These files are here for you to gain an idea of the difference between how you would implement
+simple requests in Struts vs Seam.

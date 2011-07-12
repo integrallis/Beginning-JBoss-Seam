@@ -1,0 +1,10 @@
+
+<persistence> 
+	<persistence-unit name="ticketingSystemDatabase"> 
+		<provider>org.hibernate.ejb.HibernatePersistence</provider> 	
+		<jta-data-source>java:/TicketingSystemDS</jta-data-source> 
+		<properties> 
+			<property name="hibernate.hbm2ddl.auto" value="update"/> 
+		</properties> 
+	</persistence-unit> 
+</persistence>

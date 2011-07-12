@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="2"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/chapter6_TravelReservations/web/%20css"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="dir"
+   name=""
+   committed-rev="2"/>
+<entry
+   checksum="9a13f600c2e1ad2981a5bb4fecc13ff5"
+   text-time="2006-10-25T02:39:35.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="conversationList.xhtml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="5e4f70ba706af1a3d0cc4c5fd29311ba"
+   text-time="2006-10-10T16:44:44.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="screen.css"
+   committed-rev="2"/>
+</wc-entries>

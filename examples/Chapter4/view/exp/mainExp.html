@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>In-depth Explanation</title>
+	<link href="../css/trailblazer_main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="main">
+  <div class="trail">
+    <div class="numbox">4</div>
+    <h2>Stateful components</h2>
+    <img src="../img/header_line.gif" />
+    
+    <p>
+       <center>
+       <form>
+          <INPUT type="button" value="Close Window" onClick="window.close()">
+       </form>
+       </center>
+    </p>
+
+    <p>
+       The hotel search page is backed by the a stateful session bean named
+       <code>hotelSearch</code> and implemented by the class 
+       <code>HotelSearchingAction</code>.
+    </p>
+
+<code class="block">
+&lt;h:inputText value="#{hotelSearch.searchString}" />
+&lt;h:commandButton value="Find Hotels" 
+    action="#{hotelBooking.find}" 
+    styleClass="button" />
+&lt;h:outputLabel for="pageSize">Maximum results:&lt;/h:outputLabel>
+&lt;h:selectOneMenu value="#{hotelSearch.pageSize}" id="pageSize">
+    &lt;f:selectItem itemLabel="5" itemValue="5"/>
+    &lt;f:selectItem itemLabel="10" itemValue="10"/>
+    &lt;f:selectItem itemLabel="20" itemValue="20"/>
+&lt;/h:selectOneMenu>
+</code>
+
+    <p>
+       When the button is clicked, the form is submitted and JSF sets the value 
+       of the text box and drop down menu onto the <code>searchString</code> and
+       <code>pageSize</code> attributes of <code>HotelSearchingAction</code> 
+       before calling the <code>find()</code> action listener method. We've used a 
+       session-scope stateful bean because we want it's state (the search results) to 
+       be held in the session between requests to the server.
+    </p>
+
+<code class="block">
+@Stateful
+@Name("hotelSearch")
+@Scope(ScopeType.SESSION)
+@LoggedIn
+public class HotelSearchingAction implements HotelSearching
+{
+   
+   @PersistenceContext
+   private EntityManager em;
+   
+   private String searchString;
+   private int pageSize = 10;
+   
+   @DataModel
+   private List&lt;Hotel&gt; hotels;
+   
+   public String find()
+   {
+      String searchPattern = searchString==null ? "%" : '%' + searchString.toLowerCase().replace('*', '%') + '%';
+      hotels = em.createQuery("from Hotel where lower(name) like :search or lower(city) like :search or lower(zip) like :search or lower(address) like :search")
+            .setParameter("search", searchPattern)
+            .setMaxResults(pageSize)
+            .getResultList();
+      
+      return "main";
+   }
+   
+   public int getPageSize() {
+      return pageSize;
+   }
+
+   public void setPageSize(int pageSize) {
+      this.pageSize = pageSize;
+   }
+
+   public String getSearchString()
+   {
+      return searchString;
+   }
+
+   public void setSearchString(String searchString)
+   {
+      this.searchString = searchString;
+   }
+   
+   @Destroy @Remove
+   public void destroy() {}
+
+}</code>
+
+    <p>
+       The <code>find()</code> method retrieves a list of hotels from the database and
+       initializes the <code>hotels</code> field. The <code>hotels</code> field is marked 
+       with the <code>@DataModel</code> annotation, so when the <code>find()</code> method
+       returns, Seam outjects an instance of <code>ListDataModel</code> to a context
+       variable named <code>hotels</code>. So, when the search page is re-rendered, the
+       result list is available to the JSF <code>dataTable</code>.
+    </p>
+
+<code class="block">
+&lt;h:outputText value="No Hotels Found" rendered="#{hotels != null and hotels.rowCount==0}"/>
+&lt;h:dataTable value="#{hotels}" var="hot" rendered="#{hotels.rowCount>0}">
+	&lt;h:column>
+		&lt;f:facet name="header">Name&lt;/f:facet>
+		#{hot.name}
+	&lt;/h:column>
+	&lt;h:column>
+		&lt;f:facet name="header">Address&lt;/f:facet>
+		#{hot.address}
+	&lt;/h:column>
+	&lt;h:column>
+		&lt;f:facet name="header">City, State&lt;/f:facet>
+		#{hot.city}, #{hot.state}
+	&lt;/h:column> 
+	&lt;h:column>
+		&lt;f:facet name="header">Zip&lt;/f:facet>
+		#{hot.zip}
+	&lt;/h:column>
+	&lt;h:column>
+		&lt;f:facet name="header">Action&lt;/f:facet>
+		&lt;s:link value="View Hotel" action="#{hotelBooking.selectHotel}"/>
+	&lt;/h:column>
+&lt;/h:dataTable>
+</code>
+
+    <p>
+       The "View Hotel" link is implemented using a Seam <code>&lt;s:actionLink></code>.
+       This JSF control let's us call an action, and pass a request parameter, without 
+       submitting any JSF form. The advantage of <code>&lt;s:actionLink></code> is that, 
+       unlike a standard JSF <code>&lt;h:commandLink></code>, there is no JavaScript 
+       used, so "open link in new tab" works seamlessly.
+    </p>
+    <p>
+       When this link is clicked, the <code>selectHotel()</code> method of the
+       <code>HotelBookingAction</code> bean is called and, after injecting the
+       value of the request parameter, the hotel is fetched from the database, 
+       and a Seam conversation begins!
+    </p>
+
+<code class="block">
+   @RequestParameter
+   private Long hotelId; 
+   
+   @Begin
+   public String selectHotel()
+   {
+      if (hotelId!=null)
+      {
+         hotel = em.find(Hotel.class, hotelId);
+         return "hotel";
+      }
+      else
+      {
+         return null;
+      }
+   }
+</code>
+
+   <p>
+      <center>
+      <form>
+         <INPUT type="button" value="Close Window" onClick="window.close()">
+      </form>
+      </center>
+   </p>
+
+  </div>
+</div>
+
+</body>
+</html>

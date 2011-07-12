@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<components xmlns="http://jboss.com/products/seam/components" 
+	xmlns:core="http://jboss.com/products/seam/core"
+	xmlns:theme="http://jboss.com/products/seam/theme"> 
+
+<!-- 
+	<component name="resourceBundle">
+	    <property name="bundleNames">
+	        <value>greeting</value>
+	    </property>
+	</component>
+ 	
+    <component name="org.jboss.seam.core.init">
+        <property name="debug">true</property>
+        <property name="myFacesLifecycleBug">true</property>
+        <property name="jndiPattern">chapter8/#{ejbName}/local</property>
+    </component>
+
+    <component name="org.jboss.seam.core.manager">
+        <property name="conversationTimeout">120000</property>
+    </component>
+    
+    <component class="org.jboss.seam.core.Ejb" installed="false"/>
+ -->
+	<core:init jndi-pattern="chapter8/#{ejbName}/local"/> 
+<!-- 
+	<core:resource-bundle> 
+		<core:bundle-names> 
+			<value>greeting</value> 
+		</core:bundle-names> 
+	</core:resource-bundle> 
+ -->     
+	<theme:theme-selector cookie-enabled="true"> 
+		<theme:available-themes> 
+			<value>default</value> 
+			<value>printable</value> 
+			<value>text-only</value> 
+		</theme:available-themes> 
+	</theme:theme-selector> 
+
+</components>
+
+ 

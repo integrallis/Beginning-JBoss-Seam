@@ -1,0 +1,26 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	    		xmlns:ui="http://java.sun.com/jsf/facelets"
+	  			xmlns:h="http://java.sun.com/jsf/html"
+	  			xmlns:f="http://java.sun.com/jsf/core"
+	  			xmlns:s="http://jboss.com/products/seam/taglib"
+				template="template.xhtml">
+
+<!-- content -->
+<ui:define name="content">
+	  
+
+	<h:form>
+		Approve the ticket<br/>
+		Final Comments on the File - <h:inputText value="#{description}"/><br/>
+				
+		<h:commandButton value="Approve" action="#{ticketApprove.finish}"/><br/>
+		<h:commandButton value="Send back to Working" action="#{ticketApprove.work}"/><br/>
+		<h:commandButton value="Cancel" action="#{ticketApprove.cancel}"/><br/>	
+	</h:form>
+	
+	<ui:include src="ticket_details.xhtml"/>
+
+</ui:define>
+
+</ui:composition>

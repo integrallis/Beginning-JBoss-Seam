@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter6_Misc/src/com/integrallis/misc"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   name="business"
+   kind="dir"/>
+<entry
+   kind="dir"
+   name="domain"/>
+<entry
+   name="service"
+   kind="dir"/>
+</wc-entries>

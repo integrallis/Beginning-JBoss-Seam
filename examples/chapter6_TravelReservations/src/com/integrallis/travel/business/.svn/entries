@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/chapter6_TravelReservations/src/com/integrallis/travel/business"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="2b1ef48aa448ea65ab1a672474815270"
+   text-time="2006-10-12T20:04:31.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="AirlineReservationsAction.java"
+   committed-rev="2"/>
+<entry
+   checksum="1422879387e018e6bad07a7164630391"
+   text-time="2006-10-12T02:26:05.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="BookingCartBean.java"
+   committed-rev="2"/>
+<entry
+   checksum="1a1f94ae7884e97e48fab034cf69c68d"
+   text-time="2006-10-12T20:04:55.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="CarReservationsAction.java"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="f71446136c99486b557aeb4eccee007d"
+   text-time="2006-10-12T20:04:55.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="HotelReservationsAction.java"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="3b6620bf1962d0a4b74a38ad46665745"
+   text-time="2006-10-09T19:39:59.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="TravelReservationsAction.java"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

@@ -1,0 +1,43 @@
+package com.integrallis.ticketing.domain;
+
+import org.jboss.seam.annotations.Name;
+
+//@Entity
+@Name("ticket")
+public class Ticket {
+    
+//    @Id
+//    @GeneratedValue
+    private long ticketId;
+    private String name;
+    private String description;
+    private int severity;
+    
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public int getSeverity() {
+        return severity;
+    }
+    public void setSeverity(int severity) {
+        this.severity = severity;
+    }
+    public long getTicketId() {
+        return ticketId;
+    }
+    public void setTicketId(long ticketId) {
+        this.ticketId = ticketId;
+    }
+    
+    
+
+}

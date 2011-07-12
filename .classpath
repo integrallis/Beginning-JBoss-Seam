@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="examples/Chapter4/src"/>
+	<classpathentry kind="src" path="examples/TicketingSystem/src/java"/>
+	<classpathentry kind="src" path="examples/GarageSale/src/java"/>
+	<classpathentry kind="src" path="examples/Chapter10/src/java"/>
+	<classpathentry kind="src" path="examples/Chapter10/src/test"/>
+	<classpathentry kind="src" path="examples/Chapter2/src"/>
+	<classpathentry kind="src" path="examples/Chapter1/src"/>
+	<classpathentry kind="src" path="examples/Chapter7_Banking/src"/>
+	<classpathentry kind="src" path="examples/Chapter9_Security/src"/>
+	<classpathentry kind="src" path="examples/Chapter9_hib/src"/>
+	<classpathentry kind="src" path="examples/Chapter9_ec/src"/>
+	<classpathentry kind="src" path="examples/Chapter8_ajax/src"/>
+	<classpathentry kind="src" path="examples/Chapter8/src"/>
+	<classpathentry kind="src" path="examples/Chapter6_Misc/src"/>
+	<classpathentry kind="src" path="examples/chapter6_TravelReservations/src"/>
+	<classpathentry kind="src" path="examples/Chapter3/src/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="lib/javax.servlet.jsp.jar"/>
+	<classpathentry kind="lib" path="lib/jboss-ejb3-all.jar"/>
+	<classpathentry kind="lib" path="lib/tomahawk/tomahawk-1.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-all.jar"/>
+	<classpathentry kind="lib" path="lib/faces/jsf-facelets.jar"/>
+	<classpathentry kind="lib" path="lib/myfaces-impl-1.1.4.jar"/>
+	<classpathentry kind="lib" path="lib/myfaces-api-1.1.4.jar"/>
+	<classpathentry kind="lib" path="lib/struts/struts.jar"/>
+	<classpathentry kind="lib" path="lib/struts/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="lib/jbpm/jbpm-3.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/testng-4.5.1-jdk15.jar"/>
+	<classpathentry kind="lib" path="lib/drools/drools-core-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/drools/drools-compiler-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/drools/commons-jci-core-1.0-406301.jar"/>
+	<classpathentry kind="lib" path="lib/drools/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="lib/drools/antlr-3.0ea8.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/seam/jboss-seam.jar" sourcepath="/Users/online/Documents/Projects/jboss-seam/src/main"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="2"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/chapter6_TicketingSystem/dd/app-full"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="dir"
+   name=""
+   committed-rev="2"/>
+<entry
+   checksum="7965aafe7577f9429013e378d3ac62e2"
+   text-time="2006-10-28T19:24:45.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name=".gpd.hello-world.jpdl.xml"
+   committed-rev="2"/>
+<entry
+   checksum="2ddd25ddc51210dbbf6145db56e1f6eb"
+   text-time="2006-10-28T19:24:14.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name=".gpd.new-ticket.jpdl.xml"
+   committed-rev="2"/>
+<entry
+   checksum="29edeaedd1d4cc905d87295016b840ea"
+   text-time="2006-10-28T20:50:08.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name=".gpd.ticketing-system.jpdl.xml"
+   committed-rev="2"/>
+<entry
+   checksum="f2889a68a906bad585484f27c00a3fe9"
+   text-time="2006-10-26T23:23:23.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="application.xml"
+   committed-rev="2"/>
+<entry
+   checksum="3998ea35fbfc372c1b5afcc3d9fa34b0"
+   prop-time="2006-11-02T05:01:51.000000Z"
+   text-time="2006-10-28T19:24:45.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="hello-world.jpdl.jpg"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="01aa13aaacd038757e1a666f10e67295"
+   text-time="2006-10-28T19:24:45.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="hello-world.jpdl.xml"
+   committed-rev="2"/>
+<entry
+   checksum="9f15c2c0e975526fca6e3f6191a19948"
+   text-time="2006-10-28T19:26:11.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="hibernate.cfg.xml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="caa9054336ec619843fe7a715c9e2d61"
+   text-time="2006-10-26T23:21:40.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="jboss-app.xml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="3ddf5f4d114ddb967d1c13eab1964dc7"
+   text-time="2006-06-18T16:20:32.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="jbpm.cfg.xml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="9341395b9798722435e212a6c35e830b"
+   text-time="2006-10-21T21:06:33.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="new-ticket.jpdl.xml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="9762b65aa0e611b39bbdb98218581c65"
+   prop-time="2006-11-02T05:02:00.000000Z"
+   text-time="2006-10-28T20:50:08.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="ticketing-system.jpdl.jpg"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="f75cc7fe8e6d73623ec545bf9fd111f1"
+   text-time="2006-10-28T20:50:08.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="ticketing-system.jpdl.xml"
+   committed-rev="2"/>
+</wc-entries>

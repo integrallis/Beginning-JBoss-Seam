@@ -1,0 +1,36 @@
+
+
+<process-definition name="TicketingSystem"> 
+
+	<!-- This is the starting part -->
+	<!-- Tells us where to transition to ... which task -->
+	<!-- This just tells us which task node to transition to --> 
+	
+	<!-- Next task -->
+	<!-- transitions to done -->
+	<!-- Represents a wait state. Things to do before transitioning -->
+   <start-state name="start">
+      <transition name="" to="create-or-list"></transition>
+   </start-state>
+   <task-node name="create-task">
+      <transition name="complete" to="finished"></transition>
+   </task-node>
+   <task-node name="list-tasks">
+      <transition name="" to="ticket-decision"></transition>
+   </task-node>
+   <fork name="create-or-list">
+      <transition name="create-transition" to="create-task"></transition>
+      <transition name="list-transition" to="list-tasks"></transition>
+   </fork>
+   <decision name="ticket-decision">
+      <transition name="owner" to="edit-task"></transition>
+      <transition name="manager" to="approve-task"></transition>
+   </decision>
+   <task-node name="edit-task">
+      <transition name="updated" to="finished"></transition>
+   </task-node>
+   <task-node name="approve-task">
+      <transition name="approve" to="finished"></transition>
+   </task-node>
+   <end-state name="finished"></end-state> 
+</process-definition> 

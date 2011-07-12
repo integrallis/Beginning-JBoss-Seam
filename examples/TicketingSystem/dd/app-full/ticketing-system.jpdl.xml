@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The process definition for our ticketing system. -->
+<process-definition name="TicketingSystem">
+
+    <start-state name="start">
+	    <transition to="working"/>
+    </start-state>
+	
+	<!-- this puts the ticket into a waiting state -->
+	<!-- Indicating that the worker has grabbed the ticket -->
+	<!-- and will begin working on it -->
+	<task-node name="working" end-tasks="true">
+        <task name="taskWorking" description="Tasks being worked on">
+			<assignment pooled-actors="worker-role"/>
+        </task>
+        
+        <!-- you can only go next here -->
+       	<transition name="cancel" to="working"/>
+       	<transition name="next" to="approval"/>
+    </task-node>	
+
+	<!-- this is the approval step -->
+	<!-- this decides whether the task is really finished or not -->
+	<task-node name="approval" end-tasks="true">
+        <task name="taskApproval" description="Tasks here are waiting to be approved to be mark completed">
+			<assignment pooled-actors="admin-role"/>
+        </task>
+        
+		<!-- the ticket has three choices -->
+		<!-- either marked as finished, send it back to work, or rejectit and cancel it -->
+        <transition name="work" to="working"/>                
+        <transition name="done" to="finished"/>            
+        <transition name="reject" to="cancelled"/>
+    </task-node>        
+    
+    <end-state name="finished"/>
+    <end-state name="cancelled"/>
+</process-definition>

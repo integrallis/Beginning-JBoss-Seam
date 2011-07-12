@@ -1,0 +1,140 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:c="http://java.sun.com/jstl/core"
+	    		xmlns:ui="http://java.sun.com/jsf/facelets"
+	  			xmlns:h="http://java.sun.com/jsf/html"
+	  			xmlns:f="http://java.sun.com/jsf/core"
+	  			xmlns:s="http://jboss.com/products/seam/taglib"
+				template="template.xhtml">
+
+<!-- content -->
+<ui:define name="content">
+	    
+<h1>Tickets</h1>           
+    <h2>Pooled Tasks Available for Assignment</h2>
+    <c:choose>
+        <c:when test="#{empty pooledTaskInstanceList}">
+            <p>There are no pooled tasks to be assigned.</p>
+        </c:when>
+        <c:otherwise>
+            <h:dataTable value="#{pooledTaskInstanceList}"
+                         var="task">
+                <h:column>
+                    <f:facet name="header">Ticket Id</f:facet>
+                    #{task.variables['ticketId']}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Ticket Name</f:facet>
+                    #{task.variables['ticketName']}
+                </h:column>                
+                <h:column>
+                    <f:facet name="header">Severity</f:facet>
+                    #{task.variables['severity']}
+                </h:column>                  
+                <h:column>
+                    <f:facet name="header">Owner</f:facet>
+					#{task.variables['owner']}	
+                </h:column>                     
+                <h:column>
+                    <s:link action="#{pooledTask.assignToCurrentActor}" taskInstance="#{task}"
+                        value="Take Ticket" linkStyle="button"/>
+                </h:column>
+            </h:dataTable>
+        </c:otherwise>
+    </c:choose>
+    
+    <h2>Current Tasks Assigned To You</h2>
+    <c:choose>
+        <c:when test="#{empty taskInstanceList}">
+            <p>There are no tasks to be assigned.</p>
+        </c:when>
+        <c:otherwise>
+            <h:dataTable value="#{taskInstanceList}"
+                         var="task">
+                <h:column>
+                    <f:facet name="header">Ticket Id</f:facet>
+                    #{task.variables['ticketId']}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Ticket Name</f:facet>
+                    #{task.variables['ticketName']}
+                </h:column>                
+                <h:column>
+                    <f:facet name="header">Severity</f:facet>
+                    #{task.variables['severity']}
+                </h:column>                  
+                <h:column>
+                    <f:facet name="header">Owner</f:facet>
+					#{task.variables['owner']}	
+                </h:column>                                       
+            </h:dataTable>
+        </c:otherwise>
+    </c:choose>
+    
+    <h2>Tasks Currently Working On</h2>
+    <c:choose>
+        <c:when test="#{empty taskInstanceListForType['taskWorking']}">
+            <p>There are no tasks that you are currently assigned to be working on..</p>
+        </c:when>
+        <c:otherwise> 
+            <h:dataTable value="#{taskInstanceListForType['taskWorking']}"
+                         var="task">
+                <h:column>
+                    <f:facet name="header">Ticket Id</f:facet>
+                    #{task.variables['ticketId']}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Ticket Name</f:facet>
+                    #{task.variables['ticketName']}
+                </h:column>                
+                <h:column>
+                    <f:facet name="header">Severity</f:facet>
+                    #{task.variables['severity']}
+                </h:column>                  
+                <h:column>
+                    <f:facet name="header">Owner</f:facet>
+					#{task.variables['owner']}	
+                </h:column>                     
+                <h:column>
+                    <s:link action="#{ticketWorking.viewTask}" taskInstance="#{task}" 
+                            value="Work on Ticket" linkStyle="button"/>
+                </h:column>
+            </h:dataTable>
+        </c:otherwise>
+    </c:choose>
+
+	<h2>Tasks Waiting for Approval</h2>
+    <c:choose>
+        <c:when test="#{empty taskInstanceListForType['taskApproval']}">
+            <p>There are no tasks to in approval mode.</p>
+        </c:when>
+        <c:otherwise> 
+            <h:dataTable value="#{taskInstanceListForType['taskApproval']}"
+                         var="task">
+                <h:column>
+                    <f:facet name="header">Ticket Id</f:facet>
+                    #{task.variables['ticketId']}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Ticket Name</f:facet>
+                    #{task.variables['ticketName']}
+                </h:column>                
+                <h:column>
+                    <f:facet name="header">Severity</f:facet>
+                    #{task.variables['severity']}
+                </h:column>                  
+                <h:column>
+                    <f:facet name="header">Owner</f:facet>
+					#{task.variables['owner']}	
+                </h:column>                     
+                <h:column>
+                    <s:link action="#{ticketApprove.viewTask}" taskInstance="#{task}" 
+                            value="Review Work" linkStyle="button"/>
+                </h:column>
+            </h:dataTable>
+        </c:otherwise>
+    </c:choose>
+
+</ui:define>
+
+</ui:composition>

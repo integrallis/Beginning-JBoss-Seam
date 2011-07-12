@@ -1,0 +1,5 @@
+
+hello=Hola
+helloPerson=Hola #{user.name}
+howAreYou=Comment es-ta?
+thankYou=Gracias

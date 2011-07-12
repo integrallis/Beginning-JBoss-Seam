@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-diagram name="TicketingSystem" width="752" height="676">
+  <node name="start" x="136" y="15" width="140" height="40">
+    <transition name="">
+      <label x="5" y="-10"/>
+    </transition>
+  </node>
+  <node name="create-task" x="61" y="141" width="-1" height="-1">
+    <transition name="complete">
+      <label x="-17" y="-19"/>
+    </transition>
+  </node>
+  <node name="list-tasks" x="251" y="138" width="140" height="40">
+    <transition name="">
+      <label x="5" y="-10"/>
+    </transition>
+  </node>
+  <node name="create-or-list" x="111" y="81" width="200" height="26">
+    <transition name="create-transition">
+      <label x="-80" y="-9"/>
+    </transition>
+    <transition name="list-transition">
+      <label x="5" y="-10"/>
+    </transition>
+  </node>
+  <node name="ticket-decision" x="273" y="217" width="140" height="40">
+    <transition name="owner">
+      <label x="-17" y="-7"/>
+    </transition>
+    <transition name="manager">
+      <label x="-17" y="-8"/>
+    </transition>
+  </node>
+  <node name="edit-task" x="165" y="307" width="140" height="40">
+    <transition name="updated">
+      <label x="-11" y="-16"/>
+    </transition>
+  </node>
+  <node name="approve-task" x="372" y="308" width="-1" height="-1">
+    <transition name="approve">
+      <label x="-8" y="-15"/>
+    </transition>
+  </node>
+  <node name="finished" x="56" y="420" width="140" height="40"/>
+</process-diagram>

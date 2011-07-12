@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/lib/jboss"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="dd95a6b9809e8d9abc8273e33e1096d1"
+   prop-time="2006-11-02T05:01:50.000000Z"
+   text-time="2006-07-03T23:10:31.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="hibernate-all.jar"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="41351af21bf247e5915e9ea0d290abe0"
+   prop-time="2006-11-02T05:01:48.000000Z"
+   text-time="2006-07-01T22:21:15.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="jboss-aop-jdk50.jar"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="b5d86b2a1d22245c235a172a6cab6da1"
+   prop-time="2006-11-02T05:01:55.000000Z"
+   text-time="2006-07-01T22:20:48.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="jboss-cache-jdk50.jar"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="12ce82cf2f7fbe817b56f4ffd67ac88e"
+   prop-time="2006-11-02T05:01:52.000000Z"
+   text-time="2006-07-01T22:21:23.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="jboss-ejb3-all.jar"
+   committed-rev="2"/>
+<entry
+   checksum="ecb8daa0e633523a4cdb82f9048f9906"
+   prop-time="2006-11-02T05:01:49.000000Z"
+   text-time="2006-07-01T22:21:30.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="servlet-api.jar"
+   committed-rev="2"/>
+</wc-entries>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config>
+
+	<!-- Phase listener needed for all Seam applications -->
+	
+	<!--  phase listner adds request and other things -->
+	<lifecycle>
+		<phase-listener>org.jboss.seam.jsf.SeamPhaseListener</phase-listener>
+	</lifecycle>
+
+
+<application>
+    <el-resolver>org.jboss.seam.jsf.SeamELResolver</el-resolver>
+</application>	
+
+</faces-config>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   schedule="add"
+   repos="http://petradesigns.com/repository"
+   revision="0"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/src/com/integrallis/travel/domain"
+   name=""
+   kind="dir"/>
+<entry
+   copyfrom-url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/src/com/petradesigns/travel/domain/Car.java"
+   copied="true"
+   revision="2"
+   schedule="add"
+   kind="file"
+   name="Car.java"
+   copyfrom-rev="2"/>
+<entry
+   copied="true"
+   copyfrom-url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/src/com/petradesigns/travel/domain/CarBooked.java"
+   schedule="add"
+   revision="2"
+   name="CarBooked.java"
+   kind="file"
+   copyfrom-rev="2"/>
+</wc-entries>

@@ -1,0 +1,29 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                             "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:t="http://myfaces.apache.org/tomahawk"
+    xmlns:s="http://jboss.com/products/seam/taglib">
+    
+<ui:define name="content">	
+	<h:form>
+	
+		<p>	
+			Start Date of the Trip<br/>
+	 		<t:inputDate value="#{startDate}" type="date"/><br/>		
+		</p>
+		
+		<p>
+			End Date of the Trip<br/>
+	 		<t:inputDate value="#{endDate}" type="date"/><br/>		
+		</p>
+		
+		<h:commandButton action="#{bookingCart.starTravelPlans}" 
+				value="Click to start your flight reservations"/><br/>				
+				
+	</h:form>
+</ui:define>	
+
+</ui:composition>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/chapter6_TicketingSystem/web"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="4cd02bfb17f935c3923637c51dcf462b"
+   text-time="2006-10-28T20:42:48.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="helloWorld.xhtml"
+   committed-rev="2"/>
+<entry
+   schedule="delete"
+   checksum="1683756e325a2036549a330ad4f9e4c7"
+   text-time="2006-10-27T01:53:48.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="list.xhtml"
+   committed-rev="2"/>
+<entry
+   checksum="bb90852fb5fa7768651114294c834ca9"
+   text-time="2006-10-28T17:57:19.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="login.xhtml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="476aa323e777bf90cd9fa986446f65fe"
+   text-time="2006-10-28T16:23:54.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="todo.xhtml"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

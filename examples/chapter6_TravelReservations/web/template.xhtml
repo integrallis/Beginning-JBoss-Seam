@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xml:lang="en"  
+      lang="en">
+	  
+<f:view>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Travel Reservations</title>
+	</head>
+	<body>
+	
+	<!-- used tables for simplicity. in real life css would be what you'd want to use -->
+	<div id="document">
+	<table border="0">
+	<tr>
+		<td colspan="2">
+			<div id="header">
+				<div id="status">
+			    	<h1>Travel Reservations</h1>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top">	
+			<div id="sidebar">
+				<ui:include src="sidebar.xhtml"/>
+			</div>
+		</td>
+		<td>
+			<div id="content">
+				<ui:insert name="content"/>
+			</div>
+		</td>
+	</tr>
+	<tr>	
+		<td colspan="2">	
+			<ui:include src="conversationList.xhtml" />
+		</td>
+	</tr>			
+	<tr>	
+		<td colspan="2">
+			<div id="footer">Travel Reservations Example Application</div>
+		</td>
+	</tr>
+	</table>
+	</div>
+	</body>
+</f:view>
+</html>

@@ -1,0 +1,16 @@
+<application>
+	<display-name>Garage Sale</display-name>
+
+	<module>
+		<web>
+			<web-uri>chapter6_tr.war</web-uri>
+			<context-root>/travel-reservations</context-root>
+		</web>
+	</module>
+	<module>
+		<ejb>chapter6_tr-business.ejb3</ejb>
+	</module>
+	<module>
+		<java>jboss-seam.jar</java>
+	</module>
+</application>

@@ -1,0 +1,5 @@
+
+<pages>
+	<page view-id="/flights.xhtml">Total For Trip - #{booking.totalCost}</page>		
+	<page view-id="/hotels.xhtml">Total For Trip 2 - #{booking.totalCost}</page>		
+</pages>

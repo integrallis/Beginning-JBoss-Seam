@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="0"
+   repos="http://petradesigns.com/repository"
+   schedule="add"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/src/com/integrallis/school"
+   kind="dir"
+   name=""/>
+<entry
+   schedule="add"
+   kind="dir"
+   name="domain"/>
+</wc-entries>

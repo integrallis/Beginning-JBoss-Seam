@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="2"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/lib/seam"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="dir"
+   name=""
+   committed-rev="2"/>
+<entry
+   checksum="650b6bc393f7494b55380be61d3ec07a"
+   schedule="delete"
+   prop-time="2006-11-02T05:01:41.000000Z"
+   text-time="2006-08-27T13:06:11.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="jboss-seam-debug.jar"
+   committed-rev="2"/>
+<entry
+   schedule="delete"
+   checksum="a61b15a66872950494f8fbff1b2ae90e"
+   prop-time="2006-11-02T05:01:59.000000Z"
+   text-time="2006-08-27T13:06:11.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="jboss-seam-ui.jar"
+   committed-rev="2"/>
+<entry
+   schedule="delete"
+   checksum="7f4574080305231ee907730deae01b58"
+   prop-time="2006-11-02T05:01:46.000000Z"
+   text-time="2006-08-27T13:06:11.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="jboss-seam.jar"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

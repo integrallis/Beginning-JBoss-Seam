@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/chapter6_TicketingSystem/src/com/integrallis/ticketing/service"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="5b86bb0882baa2ded2ccef09523c3189"
+   text-time="2006-10-28T17:56:20.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="Login.java"
+   committed-rev="2"/>
+<entry
+   schedule="delete"
+   checksum="af3727994a75eef32f3beaae13b60fb3"
+   text-time="2006-10-28T03:28:13.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="TicketSystem.java"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

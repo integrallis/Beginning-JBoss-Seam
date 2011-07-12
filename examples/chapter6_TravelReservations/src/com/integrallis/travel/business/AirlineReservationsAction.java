@@ -1,0 +1,89 @@
+package com.integrallis.travel.business;
+
+import static javax.persistence.PersistenceContextType.EXTENDED;
+
+import java.util.List;
+
+import javax.ejb.Remove;
+import javax.ejb.Stateful;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.jboss.seam.annotations.Destroy;
+import org.jboss.seam.annotations.Factory;
+import org.jboss.seam.annotations.In;
+import org.jboss.seam.annotations.Logger;
+import org.jboss.seam.annotations.Name;
+import org.jboss.seam.annotations.Out;
+import org.jboss.seam.annotations.datamodel.DataModel;
+import org.jboss.seam.annotations.datamodel.DataModelSelection;
+import org.jboss.seam.log.Log;
+
+import com.integrallis.travel.domain.Flight;
+import com.integrallis.travel.service.AirlineReservations;
+import com.integrallis.travel.service.BookingCart;
+
+/**
+ * This will find our airline reservations and book a flight.
+ * 
+ * @author online
+ *
+ */
+@Stateful
+//@Stateless
+@Name("airlineReservations")
+public class AirlineReservationsAction implements AirlineReservations {
+
+    // choose extended so it can go acrosss multiple things
+    @PersistenceContext(type=EXTENDED)
+    //@PersistenceContext
+    private EntityManager em;
+    
+    // list of sale Items
+    // remember this must match the factory name
+    @DataModel
+    private List<Flight> flightList;
+    
+    @DataModelSelection
+    @Out(required=false)
+    private Flight flight;
+    
+    @In(create=true,value="bookingCart")
+    BookingCart cart;
+    
+    @Logger 
+    Log log;
+            
+    @Factory("flightList")
+    @SuppressWarnings("unchecked")
+    public List<Flight> lookupFlights() {
+        System.out.println("In here");
+        flightList = em.createQuery("From Flight f order by f.departureTime").getResultList();
+        return flightList;
+    }
+    
+    public Flight getSelectedFlight() {
+        return flight;
+    }
+    
+    /**
+     * Add a departing flight.
+     */
+//    public void selectDepartureFlight() {        
+//        log.info("Add departure flight - #{flight}");
+//        cart.bookDepartureFlight(flight);
+//    }    
+//    
+//    /**
+//     * Add the returning flight
+//     */
+//    public void selectReturnFlight() {
+//        log.info("Add return flight - #{flight}");
+//        cart.bookReturnFlight(flight);
+//    }    
+    
+    @Remove
+    @Destroy
+    public void destroy() { }
+        
+}

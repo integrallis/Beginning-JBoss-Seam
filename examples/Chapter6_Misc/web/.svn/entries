@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter6_Misc/web"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   checksum="6114f44f3299865d98bb1c9bd0c4783b"
+   text-time="2006-10-31T01:02:43.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="displayCourses.jsp"
+   committed-rev="2"/>
+<entry
+   checksum="efa54e4e26e5e31696107a88eb95345a"
+   text-time="2006-10-30T04:28:37.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="displayOther.jsp"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   text-time="2006-10-31T00:59:19.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="endPage.jsp"
+   committed-rev="2"/>
+<entry
+   checksum="dac1b57ca325c263e6f8ee177cc39fee"
+   text-time="2006-11-02T03:54:20.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="login.jsp"
+   committed-rev="2"/>
+<entry
+   checksum="56f99f44ca42f85b95732f0c1dd8b6bc"
+   text-time="2006-11-02T03:54:20.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="pageOne.jsp"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="3148f4ca9fcf8f917ca45ccf5605b53d"
+   text-time="2006-11-02T03:54:20.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="pageTwo.jsp"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="d45f870f688f95ca7cb4625cadb4ed9d"
+   text-time="2006-10-31T01:02:43.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="startPage.jsp"
+   kind="file"
+   committed-rev="2"/>
+</wc-entries>

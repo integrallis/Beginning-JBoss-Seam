@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="0"
+   repos="http://petradesigns.com/repository"
+   schedule="add"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter9_ec/dd"
+   kind="dir"
+   name=""/>
+<entry
+   schedule="add"
+   name="ejb"
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="dir"
+   name="web"/>
+</wc-entries>

@@ -1,0 +1,35 @@
+package com.integrallis.ticketing.domain;
+
+import org.jboss.seam.annotations.Name;
+
+//@Entity
+@Name("ticketChange")
+public class TicketChange {
+
+//    @Id
+//    @GeneratedValue
+    private int ticketChangeId;
+    private String description;
+    private String owner;
+    
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    public String getOwner() {
+        return owner;
+    }
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+    public int getTicketChangeId() {
+        return ticketChangeId;
+    }
+    public void setTicketChangeId(int ticketChangeId) {
+        this.ticketChangeId = ticketChangeId;
+    }
+    
+    
+}

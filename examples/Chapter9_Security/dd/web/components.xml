@@ -1,0 +1,49 @@
+
+
+<components>
+
+	<!--  
+	<component class="org.jboss.seam.security.authenticator.ProviderAuthenticator">
+      <property name="providers">#{authenticatorAction}</property>
+      <property name="adapters">org.jboss.seam.security.adapter.jboss.JBossAuthenticationAdapter</property>
+    </component>
+    -->
+    <component class="org.jboss.seam.security.authenticator.ProviderAuthenticator">
+      <property name="providers">#{authenticatorAction}</property>
+    </component>
+    
+    <!-- Install a Security Configuration -->
+  <component class="org.jboss.seam.security.config.SecurityConfiguration"/>
+
+  <!-- Install the Seam Security Manager -->
+  <component class="org.jboss.seam.security.SeamSecurityManager"/>
+  
+  
+  
+  
+  
+    
+    <component name="org.jboss.seam.core.init">
+        <property name="debug">true</property>
+        <property name="myFacesLifecycleBug">true</property>
+        <property name="jndiPattern">chapter9_security/#{ejbName}/local</property>
+    </component>
+
+    <component name="org.jboss.seam.core.manager">
+        <property name="conversationTimeout">120000</property>
+    </component>
+    
+    <component class="org.jboss.seam.core.Ejb" installed="false"/>
+    
+    <component name="org.jboss.seam.theme.themeSelector">
+	    <property name="availableThemes">
+	        <value>default</value>
+	        <value>printable</value>
+	        <value>text-only</value>
+	    </property>
+	    <property name="cookieEnabled">true</property>
+	</component>
+	    
+</components>
+
+ 

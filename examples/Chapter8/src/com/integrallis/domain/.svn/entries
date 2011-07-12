@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="6"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter8/src/com/integrallis/domain"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   name=""
+   kind="dir"
+   committed-rev="6"/>
+<entry
+   checksum="79acabe7fd3d1719066825bc2c50e204"
+   text-time="2006-11-05T02:49:54.000000Z"
+   committed-date="2006-11-08T04:23:25.389000Z"
+   name="User.java"
+   kind="file"
+   committed-rev="6"/>
+</wc-entries>

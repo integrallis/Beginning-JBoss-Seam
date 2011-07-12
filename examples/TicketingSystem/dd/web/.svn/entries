@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="2"
+   repos="http://petradesigns.com/repository"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/chapter6_TicketingSystem/dd/web"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="dir"
+   name=""
+   committed-rev="2"/>
+<entry
+   checksum="4f638b98fb158684f45347a3110f8d5b"
+   text-time="2006-10-28T17:48:02.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="components.xml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="6cc33bebda91e6d13fae3a28324c76b4"
+   text-time="2006-10-11T14:04:13.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="faces-config.xml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="da0103fc900fe45a762036a1bbcfc5a6"
+   text-time="2006-10-10T14:14:41.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="pages.xml"
+   committed-rev="2"/>
+<entry
+   checksum="dc8b7e2ddc209c7e733e2c1a003f545e"
+   text-time="2006-10-28T16:22:03.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="web.xml"
+   committed-rev="2"/>
+</wc-entries>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="http://petradesigns.com/repository"
+   revision="2"
+   url="http://petradesigns.com/repository/BeginningJBossSeam/examples/Chapter4/dd/web"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name=""
+   kind="dir"
+   committed-rev="2"/>
+<entry
+   schedule="delete"
+   checksum="2c5cdf69f380d69788c696fad99898f3"
+   text-time="2006-09-29T18:07:39.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="components.xml"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="c08f3f4e6fa75b78eacd21842dfac9ba"
+   text-time="2006-09-29T18:07:37.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="faces-config.xml"
+   committed-rev="2"/>
+<entry
+   checksum="fb6b17b43fdd9de758fe47491076f12f"
+   text-time="2006-09-04T00:27:48.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   name="travel-reservations.tld"
+   kind="file"
+   committed-rev="2"/>
+<entry
+   checksum="06bed7b5bed18beb2aa7fa22e5c60f03"
+   text-time="2006-09-09T20:10:14.000000Z"
+   committed-date="2006-11-02T05:14:19.044000Z"
+   kind="file"
+   name="web.xml"
+   committed-rev="2"/>
+</wc-entries>

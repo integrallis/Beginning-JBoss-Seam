@@ -1,0 +1,59 @@
+package com.integrallis.ticketing.business;
+
+import static javax.persistence.PersistenceContextType.EXTENDED;
+
+import java.util.List;
+
+import javax.ejb.Remove;
+import javax.ejb.Stateful;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.jboss.seam.annotations.CreateProcess;
+import org.jboss.seam.annotations.Destroy;
+import org.jboss.seam.annotations.EndTask;
+import org.jboss.seam.annotations.Factory;
+import org.jboss.seam.annotations.Name;
+import org.jboss.seam.annotations.StartTask;
+import org.jboss.seam.annotations.datamodel.DataModel;
+import org.jboss.seam.annotations.datamodel.DataModelSelection;
+
+import com.integrallis.ticketing.domain.Ticket;
+import com.integrallis.ticketing.service.TicketSystem;
+
+@Stateful
+@Name("ticketSystem")
+public class TicketSystemAction implements TicketSystem {
+
+    @PersistenceContext(type = EXTENDED)
+    EntityManager em;
+    
+    @DataModel
+    List<Ticket> ticketList;
+    
+    @DataModelSelection
+    Ticket ticket;
+    
+    @Factory("ticketList")
+    @SuppressWarnings("unchecked")
+    public void listTickets() {
+        ticketList = em.createQuery("From Ticket t").getResultList();
+    }
+    
+    @CreateProcess(definition="todo") 
+    public void createTodo() {
+        
+    }
+    
+    @StartTask @EndTask 
+    public void done() {
+        
+    }
+    
+    @Destroy @Remove
+    public void destroy() {
+        
+    }
+    
+    
+}

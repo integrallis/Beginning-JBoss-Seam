@@ -1,0 +1,13 @@
+<application>
+	<display-name>Garage Sale</display-name>
+
+	<module>
+		<web>
+			<web-uri>chapter4.war</web-uri>
+			<context-root>/chapter4</context-root>
+		</web>
+	</module>
+	<module>
+		<ejb>chapter4-business.ejb3</ejb>
+	</module>
+</application>

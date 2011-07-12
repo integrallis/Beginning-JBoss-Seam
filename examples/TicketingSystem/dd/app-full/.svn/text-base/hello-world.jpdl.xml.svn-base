@@ -1,0 +1,18 @@
+
+<process-definition name="helloWorld">
+   <start-state name="start">
+      <transition to="helloWorld"></transition>
+   </start-state>
+   
+   <task-node name="helloWorld">
+   <!--  i believe this helloWorld part is the process name -->
+   	<task name="helloWorld" description="#{helloWorldList.description}">
+         <!-- <assignment actor-id="#{actor.id}"/> -->
+    </task>
+	<transition to="done"></transition>
+   </task-node> 
+
+   <end-state name="done"></end-state>
+</process-definition>
+
+			

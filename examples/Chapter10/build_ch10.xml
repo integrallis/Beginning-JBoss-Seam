@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<project name="GarageSale" default="all" basedir=".">
+
+    <description>
+    ============================================================================        
+    Beginning Enterprise Open Source Java - By Brian Sam-Bodden
+    ============================================================================    
+    This build script was developed to be a generic enterprise development build
+    script using ANT 1.6.5 (ant.apache.org). To customize it or use it for other 
+    projects modify the build.properties file.
+    </description>
+    
+
+    <!-- =================================================================== -->
+    <!-- Initialization                                                      -->
+    <!-- =================================================================== -->
+
+    <property file="build.properties"/>  
+    
+    <!-- =========== -->
+    <!-- Directories -->
+    <!-- =========== -->
+    <property name="build" location="build" />
+    <property name="lib" location="../../lib" />   
+    
+    <!-- Source -->
+    <property name="src" location="src" />         
+    <property name="src-java" location="${src}/java" />
+    <property name="src-test" location="${src}/test" />
+    	
+    <!-- Source Web Folders -->
+    <property name="web" location="web" />
+    
+    <!-- Build Artifact Destinations -->
+    <property name="classes" location="bin" />    
+    <property name="dist" location="dist" />    
+    
+    <!-- Deployment Descriptors -->
+    <property name="dd" location="dd" />         
+    <property name="dd-ejb" location="${dd}/ejb" />
+	<property name="dd-web" location="${dd}/web" />
+	<property name="dd-app-normal" location="${dd}/app-full" />
+	
+    <!-- Libraries -->
+    <property name="seam-lib" location="${lib}/seam" />    
+    <property name="faces-lib" location="${lib}/faces" />    
+	<property name="jboss-lib" location="${lib}/jboss" />
+	
+    <!-- ===== -->
+    <!-- Files -->
+    <!-- ===== -->
+    <property name="ear-filename" value="${app.name}.ear" />
+    <property name="ear-file" value="${dist}/${ear-filename}" /> 
+    <property name="war-filename" value="${app.name}.war" />
+    <property name="war-file" value="${dist}/${war-filename}" /> 
+    <property name="ejb3-filename" value="${app.name}-business.ejb3" />
+    <property name="ejb3-file" value="${dist}/${ejb3-filename}" /> 
+
+    <!-- ===== -->
+    <!-- Paths -->
+    <!-- ===== -->
+    <path id="all.source.path">
+        <pathelement path="${src-java}"/>
+    </path>    
+    
+    <!-- =========== -->
+    <!-- Class Paths -->
+    <!-- =========== -->   
+    <path id="class.path">
+        <fileset dir="${jboss-lib}">
+            <include name="*.jar"/> 
+        </fileset>
+    	<fileset dir="${seam-lib}">
+            <include name="*.jar"/> 
+        </fileset>
+    </path> 
+    
+    <path id="app.class.path">
+        <pathelement location="${classes}" />
+        <path refid="class.path"/> 
+    </path>
+
+    <!-- =========== -->
+    <!-- Patternsets -->
+    <!-- =========== -->    
+    <patternset id="ear.set">
+        <include name="${ejb3-filename}" />
+        <include name="${war-filename}" />
+    </patternset>  
+    
+    <!-- ======== -->
+    <!-- TaskDefs -->
+    <!-- ======== -->   
+    
+    <!-- =================================================================== -->
+    <!-- Target: compile                                                     -->
+    <!-- Compiles all classes                                                -->
+    <!-- MUST use JDK 1.5 compiler                                           -->    
+    <!-- =================================================================== -->
+    <target name="compile" description="Compiles all classes (JDK1.5)">     
+    	<mkdir dir="${classes}"/>
+        <javac
+            destdir="${classes}"
+            classpathref="class.path"
+            debug="on"
+            deprecation="on"
+            optimize="off">
+            <src>
+                <path refid="all.source.path" />
+            </src>
+        </javac>
+    </target>    
+    
+    <target name="compile-clean">
+        <delete includeemptydirs="true">
+            <fileset dir="${classes}" includes="**/*"/>
+        </delete>        
+    </target>    
+    
+    <!-- =================================================================== -->
+    <!-- Target: package-web                                                 -->
+    <!-- Package the web module                                              -->
+    <!-- =================================================================== -->    
+    <target name="package-web" depends="compile" 
+        description="Package the web module" >
+        <war warfile="${war-file}" webxml="${dd-web}/web.xml">
+        	<!-- include the other xml configurations -->
+        	<webinf dir="${dd-web}">
+        		<exclude name="web.xml"/>
+            </webinf>
+        	<!-- include our jsp's and html files -->
+        	<fileset dir="${web}">
+                <include name="**/*.jsp"/>
+                <include name="**/*.html"/>
+            </fileset>
+        	<!-- the classes, only include our web based classes -->
+            <classes dir="${classes}">
+                <include name="**/web/**/*"/>
+            </classes>      
+        	<!-- include the seam-ui component -->
+            <lib dir="${lib}/seam" includes="jboss-seam-ui.jar"/>    
+        	<lib dir="${lib}/seam" includes="jboss-seam-debug.jar"/>
+        	<lib dir="${faces-lib}" includes="*.jar"/> 
+        </war>
+    </target>
+    
+    <target name="package-web-clean">
+        <delete file="${war-file}"/>
+    </target>    
+    
+    <!-- =================================================================== -->
+    <!-- Target: package-ejb                                                 -->
+    <!-- Package all the non-persistence EJB classes                         -->
+    <!-- =================================================================== -->    
+    <target name="package-ejb" depends="compile,package-ejb-init"
+            description="Package all the non-persistence EJB classes">
+        <jar jarfile="${ejb3-file}">
+        	<metainf dir="${dd-ejb}" includes="*.xml"/>
+        	<!-- include all but the web classes -->
+            <fileset dir="${classes}">
+                <include name="**"/>
+                <exclude name="**/web/**/*"/>
+            </fileset>      
+        	<fileset dir="${src-java}">
+            	<include name="seam.properties"/>
+    		</fileset>
+        </jar>
+    </target>    
+    
+    <target name="package-ejb-init">
+        <mkdir dir="${dist}"/>
+    </target>
+    
+    <target name="package-ejb-clean">
+        <delete file="${ejb3-file}"/>
+    </target>    
+    	
+    <!-- =================================================================== -->
+    <!-- Target: package-ear                                                 -->
+    <!-- Creates a deployable EAR file                                       -->
+    <!-- =================================================================== -->
+    <target name="package-ear" depends="package-ejb,package-web" 
+            description="Creates a deployable EAR file">
+        <ear destfile="${ear-file}" 
+             appxml="${dd-app-normal}/application.xml">            
+        	<!-- you want to grab all but that application.xml we just defined -->
+        	<metainf dir="${dd-app-normal}" excludes="application.xml"/>
+        	<!-- include our ear and war file -->
+            <fileset dir="${dist}">
+                <patternset refid="ear.set"/>            
+            </fileset>                   
+        	<!-- also include the seam libraries -->
+            <fileset dir="${lib}/seam" includes="jboss-seam.jar"/>
+        </ear>    
+    </target>
+    
+    <target name="package-ear-clean">
+        <delete file="${ear-file}"/>
+    </target>
+
+    
+    <!-- =================================================================== -->
+    <!-- Target: clean-all                                                   -->
+    <!-- Removes all build artifacts                                         -->
+    <!-- =================================================================== --> 
+    <target name="clean-all" description="Removes all build artifacts">
+	<!--
+        <antcall target="compile-clean" />
+        <antcall target="generate-docs-clean" />        
+        <antcall target="test-clean" />
+        <antcall target="package-ejb-clean" />
+        <antcall target="package-web-clean" />        
+        <antcall target="package-har-clean" />        
+        <antcall target="package-ddto-clean" />        
+        <antcall target="package-ear-clean" />     
+        <antcall target="package-spring-web-clean" />
+    -->
+    </target>
+    
+    <!-- =================================================================== -->
+    <!-- Target: package-deploy                                              -->
+    <!-- Packages the ear and copies it to the (hot)deployment directory.    -->
+    <!-- =================================================================== -->
+    <target name="package-deploy" depends="package-ear"
+            description="Copies the ear to the deployment directory">
+        <copy todir="${ear.deployment}">
+            <fileset dir="${dist}">
+                <include name="${ear-filename}"/>        
+            </fileset>
+        </copy>    
+    </target>
+	
+	
+    <target name="test" depends="compile" description="Run the core unit tests">
+
+        <taskdef resource="testngtasks"
+                 classpath="${testng.jar}"/>
+        
+        <copy todir="${build.dir}/test" >
+            <fileset dir="${classes.dir}" includes="**/*.*"/>
+        </copy>
+        
+        <delete dir="test-output"/>             
+       
+        <testng>
+            <classpath path="${coverage.dir}/classes"/>
+            <classpath path="${build.dir}/test"/>
+            <classpath refid="test.classpath"/>
+            <classpath refid="classpath.emma"/>
+            <xmlfileset dir="${src.test.dir}" includes="**/*.xml"/>
+        </testng>
+        
+    </target>
+    
+    <!-- =================================================================== -->
+    <!-- Target: all                                                         -->
+    <!-- Tests and Packages the J2EE Application                             -->
+    <!-- =================================================================== -->
+    
+    <target name="all" depends="package-deploy" 
+            description="Tests and Packages the JBoss J2EE &amp; Spring Applications" />
+
+    <!-- =================================================================== -->
+    <!-- Target: all-clean-first                                             -->
+    <!-- Tests and Packages the J2EE Application (Cleans First)              -->     
+    <!-- =================================================================== -->
+    
+    <target name="all-clean-first" depends="clean-all,all" 
+            description="Tests and Packages the JBoss J2EE &amp; Spring Applications (Cleans First)" /> 
+
+</project>

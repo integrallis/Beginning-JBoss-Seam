@@ -1,0 +1,19 @@
+package TicketingSystemPermissions;
+
+import java.security.Principal;
+
+import org.jboss.seam.security.PermissionCheck;
+import org.jboss.seam.security.Role;
+
+import com.integrallis.ticketing.domain.User
+
+rule AdminIsAUser
+  salience 10
+  no-loop
+when
+  Role(name == "ticket-admin")
+  not Role(name == "ticket-user")
+then
+  assert(new Role("ticket-user"));
+end;
+
